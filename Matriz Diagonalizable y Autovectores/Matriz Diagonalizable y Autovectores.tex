@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+% -------------  Margenes ---------------
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+% ------------- /Margenes ---------------
+% ------------- Espaciado entre lineas ---------------
+\renewcommand{\baselinestretch}{1.5} 
+% !TeX spellcheck = es_ES
+\title{Matriz Diagonalizable \\Autovectores}
+\author{Álgebra II}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+% ------------- Comienza el documento ---------------
+\section{Diagonalización de Matriz de T.L.}
+Dado A $\in {\rm I\!R}^{nxn} \Rightarrow$ siempre existe una \textit{f}: ${\rm I\!R}$$^{n}\rightarrow {\rm I\!R}^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$. \\
+En otras palabras, \textit{f} es una T.L. y \textbardbl \textit{f}\textbardbl $_{CC}$ = A
+\subsection{Definición}
+Decimos que A es una matriz diagonalizable si y sólo si, al definir \textit{f}: ${\rm I\!R}$$^{n}\rightarrow ${\rm I\!R}$^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ existe una base B tal que \textbardbl \textit{f}\textbardbl $_{BB}$ es una matriz diagonal, o sea existe una matriz P = \textbardbl \textit{id}\textbardbl $_{BC}$ / \textbardbl \textit{f}\textbardbl $_{B}$ = P$^{-1}\cdot A \cdot P$ \textit{(¿Por qué?)}
+% ------------- Prop: Diagonalizable sii base B ---------------
+\subsection{Proposición}
+A es diagonalizable $\leftrightarrow$ existe una base B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de ${\rm I\!R}^{n}$ y escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}=\lambda_{i}\cdot\vec{v}_{i}$\\
+$\Rightarrow$) {\bfseries \textcolor{blue}{Hipótesis:}} A es diagonalizable, o sea si \textit{f}: ${\rm I\!R}^{n}$ $\rightarrow$ ${\rm I\!R}^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ existe una base B tal que \textbardbl \textit{f}\textbardbl $_{BB}$ \indent es una matriz diagonal\\
+\indent{\bfseries \textcolor{red}{Tesis:}} Existen escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$ \\
+\textbf{Demostración:} Como \textbardbl \textit{f}\textbardbl $_{BB}$ es diagonal $\Rightarrow$ \textbardbl \textit{f}\textbardbl $_{BB}$ = $M = \begin{pmatrix} a_{11}&0&\ldots&0\\ 0&a_{22}&\ldots&0\\ \ldots&\ldots&\ddots&\ldots\\ 0&0&\ldots&a_{nn} \end{pmatrix}$ \\
+Para interpretar esta matriz, recordamos la definición de matriz de T.L. dada una base:\\
+\textit{f}($\vec{v}_{1}$) = $a_{11}\cdot\vec{v}_1 + 0\cdot\vec{v}_2 + \ldots 0\cdot\vec{v}_{n}$ = $a_{11}\cdot\vec{v}_1$\\
+\textit{f}($\vec{v}_{2}$) = $0\cdot\vec{v}_1 + a_{22}\cdot\vec{v}_2 + \ldots 0\cdot\vec{v}_{n}$ = $a_{22}\cdot\vec{v}_2$\\
+$\vdots$\\
+\textit{f}($\vec{v}_{n}$) = $0\cdot\vec{v}_1 + 0\cdot\vec{v}_2 + \ldots a_{nn}\cdot\vec{v}_{n}$ = $a_{nn}\cdot\vec{v}_n$ \\
+Con lo que queda demostrada la tesis. Veamos ahora la otra implicación.
+\newpage
+$\Leftarrow$) {\bfseries \textcolor{blue}{Hipótesis:}} $\exists$ base B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de $R^{n}$ y escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$\\
+\indent \indent {\bfseries \textcolor{red}{Tesis:}} A es diagonalizable \\
+\textbf{Demostración:} Debemos probar que si \textit{f}: ${\rm I\!R}^{n}\rightarrow ${\rm I\!R}$^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ entonces \textbardbl \textit{f}\textbardbl $_{BB}$ es diagonal. \\
+Para esto, armemos \textbardbl \textit{f}\textbardbl $_{BB}$ :\\
+\textit{f}($\vec{v}_{1}$) = A$\cdot\vec{v}_1$ = $\lambda_{1}\cdot\vec{v}_{1}$ $\Rightarrow$ la 1ra columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} \lambda_{1}\\ 0\\ \vdots\\ 0 \end{pmatrix}$\\
+\textit{f}($\vec{v}_{2}$) = A$\cdot\vec{v}_2$ = $\lambda_{2}\cdot\vec{v}_{2}$ $\Rightarrow$ la 2da columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} 0 \\ \lambda_{2}\\ \vdots\\ 0 \end{pmatrix}$\\
+$\vdots$\\
+\textit{f}($\vec{v}_{n}$) = A$\cdot\vec{v}_n$ = $\lambda_{n}\cdot\vec{v}_{n}$ $\Rightarrow$ la n columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} 0 \\ 0\\ \vdots\\ \lambda_n \end{pmatrix}$\\
+Por lo tanto, \textbardbl \textit{f}\textbardbl $_{B}$ = $ \begin{pmatrix} a_{11}&0&\ldots&0\\ 0&a_{22}&\ldots&0\\ \ldots&\ldots&\ddots&\ldots\\ 0&0&\ldots&a_{nn} \end{pmatrix}$ que es una matriz diagonal. \\
+\newpage
+% ------------- Autovalores y Autovectores ---------------
+\section{Autovalores y Autovectores}
+Dada una matriz A $\in {\rm I\!R}^{nxn}$ llamaremos autovalor de A a un número $\lambda \in {\rm I\!R}$ si existe un vector $\vec{v} \in {\rm I\!R}^n, \vec{v} \neq \vec{0}$ al que llamaremos autovector de A asociado al autovalor $\lambda$ tal que $A\cdot\vec{v} = \lambda\cdot\vec{v}$
+\subsection{Proposiciones}
+% ------------- Proposición EZPZ ---------------
+\subsubsection{C.L. vectores asociados}
+Si $\vec{v}_1, \vec{v}_2, \ldots \vec{v}_n$ son autovectores de una matriz A asociados a un autovalor $\lambda$, entonces cualquier combinación lineal de ellos será autovector de A asociado a $\lambda$. \\
+\textbf{Demostración:} Sabiendo que A$\cdot\vec{v}_i = \lambda\cdot\vec{v}_i$\\
+A$\cdot( \alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n )$ $\rightarrow$ Planteo C.L. de los vectores\\ 
+$ \alpha_1A\vec{v}_1 + \alpha_2A\vec{v}_2 + \ldots \alpha_nA\vec{v}_n$ $\rightarrow$ Distribuyo A\\
+$ \alpha_1\lambda\vec{v}_1 + \alpha_2\lambda\vec{v}_2 + \ldots \alpha_n\lambda\vec{v}_n$  $\rightarrow$ Uso hipótesis\\
+$\lambda \cdot(\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n)$ $\rightarrow$ Factor Común $\lambda$\\
+Por lo tanto A$\cdot( \alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n )$ = $\lambda \cdot(\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n)$
+\subsubsection{Relación entre autovalor y determinante}
+$\lambda$ es un autovalor asociado a $\vec{v}$, autovector de una matriz A $\Leftrightarrow$ \textbar  A - $\lambda$I\textbar = 0\\
+{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, $\lambda$ y $\vec{v}$ autovalor y autovector de A tal que $A\cdot\vec{v} = \lambda\cdot\vec{v}$ siendo $\vec{v} \neq \vec{0}$ (¿Por qué?)\\
+{\bfseries \textcolor{red}{Tesis:}} \textbar  A - $\lambda$I\textbar = 0\\
+\textbf{Demostración:} En $A\cdot\vec{v} = \lambda\cdot\vec{v}$ con  $\vec{v} \neq \vec{0}$, $\vec{v}$ es solución del sistema homogéneo (A - $\lambda$I)$\cdot\vec{x}$ = $\vec{0}$ (¿Por qué?).\\
+Luego este es un sistema compatible indeterminado: por lo tanto el determinante de su matriz es = 0. Es decir, \textbar  A - $\lambda$I\textbar = 0\\
+La otra implicación queda a cargo de ustedes ,
+pues es muy parecida a ésta
+\subsubsection{Concepto Geométrico}
+\textit{f}: Dada ${\rm I\!R}^{2}\rightarrow {\rm I\!R}^{2}$ o \textit{f}: ${\rm I\!R}^{3}\rightarrow {\rm I\!R}^{3}$ podemos decir que $\vec{x}$ es autovector de \textit{f} si al transformarse conserva la misma dirección.\\
+Ejemplos:\\
+a) \textit{f}: ${\rm I\!R}^{2}\rightarrow {\rm I\!R}^{2}$ / \textit{f}($x,y$) = ($x, -y$)\\
+b)\textit{f}: ${\rm I\!R}^{3}\rightarrow {\rm I\!R}^{3}$ / \textit{f}($x,y,z$) = ($x+y, x-y, 0$)\\
+Luego halla los autovalores y autovectores de A y verifica lo que dice el enunciado anterior.\\
+\newpage
+\subsection{Propiedades de los Autovectores}
+\end{document}

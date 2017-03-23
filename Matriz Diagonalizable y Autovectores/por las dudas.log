@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  22 MAR 2017 19:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  23 MAR 2017 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"./Espacios Vectoriales.tex"
-(./Espacios Vectoriales.tex
+**"./por las dudas.tex"
+(./por las dudas.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
 (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -418,8 +418,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count99
 ))
-(./Espacios Vectoriales.aux)
-\openout1 = `"Espacios Vectoriales.aux"'.
+(./por las dudas.aux)
+\openout1 = `"por las dudas.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
@@ -448,63 +448,50 @@ LaTeX Font Info:    ... okay on input line 20.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks22
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
  (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--33
-
- []
-
-[1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [1
 
 {e:/Developer/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 41--50
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
+Underfull \hbox (badness 10000) in paragraph at lines 73--78
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--75
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 103--107
-
- []
-
-[4] (./Espacios Vectoriales.aux) ) 
+[3] [4] (./por las dudas.aux) ) 
 Here is how much of TeX's memory you used:
- 1924 strings out of 494945
- 22982 string characters out of 6180553
- 80587 words of memory out of 5000000
+ 1925 strings out of 494945
+ 22934 string characters out of 6180553
+ 82602 words of memory out of 5000000
  5234 multiletter control sequences out of 15000+600000
- 9023 words of font info for 33 fonts, out of 8000000 for 9000
+ 9369 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,8n,20p,325b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/Developer/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb><e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr7.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Espacios Vectoriales.pdf" (4 pages, 116698 bytes).
+ 27i,10n,20p,466b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+<e:/Developer/texlive/2016/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr7.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "por las dudas.pdf" (4 pages, 132776 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
