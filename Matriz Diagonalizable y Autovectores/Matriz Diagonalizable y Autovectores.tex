@@ -55,7 +55,7 @@ Dada una matriz A $\in {\rm I\!R}^{nxn}$ llamaremos autovalor de A a un número 
 % ------------- Proposición EZPZ ---------------
 \subsubsection{C.L. vectores asociados}
 Si $\vec{v}_1, \vec{v}_2, \ldots \vec{v}_n$ son autovectores de una matriz A asociados a un autovalor $\lambda$, entonces cualquier combinación lineal de ellos será autovector de A asociado a $\lambda$. \\
-\textbf{Demostración:} Sabiendo que A$\cdot\vec{v}_i = \lambda\cdot\vec{v}_i$\\
+\textbf{Demostración:} Sabiendo que A$\cdot\vec{v}_i = \lambda\cdot\vec{v}_i$\\ 
 A$\cdot( \alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n )$ $\rightarrow$ Planteo C.L. de los vectores\\ 
 $ \alpha_1A\vec{v}_1 + \alpha_2A\vec{v}_2 + \ldots \alpha_nA\vec{v}_n$ $\rightarrow$ Distribuyo A\\
 $ \alpha_1\lambda\vec{v}_1 + \alpha_2\lambda\vec{v}_2 + \ldots \alpha_n\lambda\vec{v}_n$  $\rightarrow$ Uso hipótesis\\
@@ -77,4 +77,81 @@ b)\textit{f}: ${\rm I\!R}^{3}\rightarrow {\rm I\!R}^{3}$ / \textit{f}($x,y,z$) =
 Luego halla los autovalores y autovectores de A y verifica lo que dice el enunciado anterior.\\
 \newpage
 \subsection{Propiedades de los Autovectores}
+\textbf{1)} S = \{$\vec{x}$ / $\vec{x} = \vec{0}$ o $\vec{x}$ es un autovector asociado al autovalor $\lambda$ \} es un subespacio. (Queda como ejercicio)\\
+% ------------- Autovectores distintos son L.I. ---------------
+\textbf{2)} Los autovectores correspondientes a autovalores distintos son L.I.\\
+{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} autovectores de A . $\lambda_{1}, \lambda_{2},\ldots \lambda_{n}$ sus autovalores asociados tales que $\lambda_i \neq \lambda_j$ $\forall$ $i\neq j$ \\
+{\bfseries \textcolor{red}{Tesis:}} \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} es un conjunto L.I.\\
+\textbf{Demostración:} La demostración habría que hacerla usando el principio de inducción completa. Nosotros vamos a probar que vale para n=2 y luego usando que vale para n=2 demostraremos que vale para n=3 y así sucesivamente se puede demostrar para cualquier valor de n.\\
+a) Probaremos para $n=2$, es decir que \{$\vec{x}_{1}, \vec{x}_2$\} es un conjunto L.I. \\
+Sea: 
+\begin{align}
+\alpha_1\vec{x}_1+\alpha_2\vec{x}_2 = \vec{0}
+\end{align}
+Multiplicamos ambos miembros por A y nos queda: $\alpha_{1}A\vec{x}_1+\alpha_{2}A\vec{x}_2 = \vec{0}$\\
+Pero $A\vec{x}_1 = \lambda_1\vec{x}_1$ y $A\vec{x}_2 = \lambda_2\vec{x}_2$ $\rightarrow$ nos queda:
+\begin{align}
+\alpha_1\lambda_1\vec{x}_1+\alpha_2\lambda_2\vec{x}_2 = \vec{0}
+\end{align}
+Las incógnitas son entonces $\alpha_1$ y $\alpha_2$, las cuales debemos despejar de (1) y (2).
+\begin{itemize}
+\item Multiplico (1) por $\lambda_1$: $\alpha_1\lambda_1\vec{x}_1+\alpha_2\lambda_1\vec{x}_2 = \vec{0}$ 
+\item Le resto la ecuación (2): $\alpha_2\lambda_1\vec{x}_2 - \alpha_2\lambda_2\vec{x}_2=\vec{0}$
+\end{itemize}
+Nos queda entonces $\alpha_2\vec{x}_2\cdot(\lambda_1-\lambda_2)=\vec{0}$\\
+Pero $\vec{x}_2 \neq \vec{0}$ y $(\lambda_1 - \lambda_2) \neq \vec{0}$ (¿Por qué?). Por lo tanto $\alpha_2=0$\\
+Reemplazando en (1) nos queda $\alpha_2=0$. Hemos probado que \{$\vec{x}_{1}, \vec{x}_2$\} es un conjunto L.I. \\
+b) Veamos ahora para $n=3$ o sea tenemos $\vec{x}_{1}, \vec{x}_2, \vec{x}_3$ autovectores de A y $\lambda_1, \lambda_2, \lambda_3$ diferentes entre sí. Queremos mostrar que \{$\vec{x}_{1}, \vec{x}_2, \vec{x}_3$\} es un conjunto L.I.\\
+Sea: 
+\begin{align}
+\alpha_1\vec{x}_1+\alpha_2\vec{x}_2+\alpha_3\vec{x}_3 = \vec{0}
+\end{align}
+Multiplicando por A y reemplazando por los autovectores nos queda:
+\begin{align}
+\alpha_{1}\lambda_1\vec{x}_1+\alpha_{2}\lambda_2\vec{x}_2 + \alpha_{3}\lambda_3\vec{x}_3 = \vec{0}
+\end{align}
+Hacemos $\lambda_1\cdot$(3)-(4) y nos queda $\alpha_2(\lambda_1-\lambda_2)\vec{x}_2+\alpha_3(\lambda_1-\lambda_3)\vec{x}_3=\vec{0}$ \\
+Como $\vec{x}_2$ y $\vec{x}_3$ son 2 autovectores asociados a autovalores diferentes son L.I. Luego si tengo una combinación lineal de ellos igualada a $\vec{0}$ sos escalares son igual a 0.\\
+$\alpha_2(\lambda_1-\lambda2)=0$ ; $\alpha_3(\lambda_1-\lambda_3)=0$ $\rightarrow$ $\alpha_2 = \alpha_3 = 0$ (¿Por qué?)\\
+Reemplazando en (3) nos queda $\alpha_1=0$\\
+Entonces hemos probado que \{$\vec{x}_{1}, \vec{x}_2, \vec{x}_3$\} es un conjunto L.I.
+\newpage
+\subsection{Consecuencias}
+\begin{enumerate}
+\item A $\in \rm {I\!R}^{nxn}$ es una matriz diagonalizable $\Leftrightarrow$ \\
+a) Existe B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de $\in \rm {I\!R}^{n}$ formada por autovectores \\
+b) Tiene n autovectores L.I.
+\item Si A tiene n autovalores diferentes $\rightarrow$ A es diagonalizable (No vale el recíproco)
+\item Si A tiene algun autovalor múltiple ($\lambda_0$) pero la dim$(S)_{\lambda_0}$ = $multiplicidad_{\lambda_0}$ $\rightarrow $ A es diagonalizable (No vale el recíproco)
+\end{enumerate}
+\section{Diagonalización de matrices simétricas}
+\begin{enumerate}
+\item Las matrices simétricas son siempre diagonalizables \textit{(sin demostración)}
+\item Los autovectores de matrices simétricas correspondientes a autovalores diferentes son ortogonales 
+
+{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$ matriz simétrica, \{$\vec{x}_{1}, \vec{x}_2$\} autovectores de A asociados a $\lambda_{1}, \lambda_{2}$ donde $\lambda_{1} \neq \lambda_{2}$\\
+{\bfseries \textcolor{red}{Tesis:}} $\vec{x}_{1} \perp \vec{x}_2$ es decir $(\vec{x}_1\cdot\vec{x}_2)=0$\\
+\textbf{Demostración:} Consideramos el producto interno canónico en el que se cumple que $(\vec{x}\cdot\vec{y}) = \vec{x}^\mathsf{T}\cdot\vec{y}$\\
+Hacemos \\
+$(\vec{x}_1)^\mathsf{T}A\cdot\vec{x}_2=(\vec{x}_1)^\mathsf{T}\lambda_2\vec{x}_2=\lambda_2(\vec{x}_1\cdot\vec{x}_2)$\\
+$(\vec{x}_1)^\mathsf{T}A \cdot \vec{x}_2=(\vec{x}_1)^\mathsf{T} A^\mathsf{T} \vec{x}_2 =(A\cdot\vec{x}_1)^\mathsf{T}\vec{x}_2=\lambda_1(\vec{x}_1\cdot\vec{x}_2)$\\
+Podemos igualar ambas igualdades finales dado que parten de la misma expresión:\\
+$\lambda_2\cdot(\vec{x}_1\cdot\vec{x}_2)=\lambda_1\cdot(\vec{x}_1\cdot\vec{x}_2)$, luego pasamos restando y factor común: \\
+$(\lambda_2-\lambda_1)(\vec{x}_1\cdot\vec{x}_2)=0$ y como $\lambda_1 \neq \lambda_2 \rightarrow (\vec{x}_1\cdot\vec{x}_2)=0$
+% ------------- Simetrica sii base ortogonal ---------------
+\item A es una matriz simétrica $\leftrightarrow$ tiene una base ortogonal de autovectores\\
+$\rightarrow$){\bfseries \textcolor{blue}{Hipótesis:}} A es simétrica\\
+{\bfseries \textcolor{red}{Tesis:}} $\exists$ una base ortonormal de ${\rm I\!R}^{n}$ formada por autovectores\\
+\textbf{Demostración:} Siendo A simétrica consideraremos 2 casos posibles:\\
+a) Tiene n autovalores distintos, los autovectores asociados serían ortogonales (probado anteriormente) y dividiendo cada uno por su norma tendremos una base ortonormal de autovectores \\
+b) Hay algún autovalor múltiple ($\lambda_0$), como sabemos que es diagonalizable, la Dim$(S)_{\lambda_{0}}$ = multiplicidad de $\lambda_0$ $\rightarrow$ dentro de ese subespacio podré encontrar una base ortonormal y junto con los otros formarán una base ortonormal de ${\rm I\!R}^{n}$ formada por autovectores
+
+$\leftarrow$){\bfseries \textcolor{blue}{Hipótesis:}} A tiene una base ortonormal de autovectores\\
+{\bfseries \textcolor{red}{Tesis:}} A es simétrica\\
+\textbf{Demostración:} Como A tiene una base ortogonal de
+autovectores $\rightarrow$\\
+$\exists$ D diagonal tal que $A = P \cdot D \cdot P ^\mathsf{T} $\\
+Por lo tanto $A^\mathsf{T}=(P \cdot D \cdot P ^\mathsf{T})^\mathsf{T}= (P^\mathsf{T})^\mathsf{T} \cdot D^\mathsf{T} \cdot P ^\mathsf{T} = P \cdot D \cdot P ^\mathsf{T} = A$\\
+Queda demostrado que A es simétrica
+\end{enumerate}
 \end{document}
