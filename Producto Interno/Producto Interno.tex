@@ -70,6 +70,61 @@ Esta demostración es necesaria para que esté bien definido el ángulo entre do
 Para realizar esta demostración, definimos: $\vec{z} = \vec{x} + \alpha\cdot\vec{y}$ \\
 Entonces podemos afirmar $((\vec{x} + \alpha\cdot\vec{y})\cdot(\vec{x} + \alpha\cdot\vec{y})) \geq 0$\\
 Aplicando propiedades de producto interno (¿Cuales?) nos queda: \\
-$\parallel\vec{x}\parallel^2 +$ 2 $\alpha\cdot(\vec{x}\cdot\vec{y}) + \alpha^2 \cdot \parallel\vec{y}\parallel^2$ $\geq 0$\\
-Esta expresión representa geométricamente una parábola una parábola de variable $\alpha$, la cual es siempre $\geq$ 0. Entonces tiene 1 o ninguna o 
+$\parallel\vec{x}\parallel^2 +$ 2 $\alpha\cdot(\vec{x}\cdot\vec{y}) + \alpha^2 \cdot \parallel\vec{y}\parallel^2$ $\geq 0$
+\\
+Esta expresión representa geométricamente una parábola una parábola de variable $\alpha$, la cual \\ es siempre $\geq$ 0. Entonces tiene 1 o ninguna raíz lo que significa que al aplicar la fórmula para aplicar raíces en una parábola:\\\\
+$(\dfrac{-b\pm\sqrt{b^2-4ac}}{2a})$ \indent $\bigtriangleup$ = $b^2-4ac \leq 0$
+\newpage
+\noindent En nuestro caso resulta: \\
+$(2\cdot(\vec{x}\cdot\vec{y}))^2 -4 \cdot \parallel\vec{y}\parallel^2 \parallel\vec{x}\parallel^2$  $\leq 0$\\
+$(2\cdot(\vec{x}\cdot\vec{y}))^2$ $\leq 4$ $\cdot \parallel\vec{y}\parallel^2 \parallel\vec{x}\parallel^2$ \\
+$\mid(\vec{x}\cdot\vec{y})\mid$ $\leq$ $\parallel\vec{x}\parallel \parallel\vec{y}\parallel$ (¿Por qué?)
+\subsection{Todo conjunto ortogonal es L.I.}
+\textbf{Hipótesis:} $\{\vec{a}_1, \vec{a}_2, \hdots, \vec{a}_n\}$ Conjunto Ortogonal \\
+\textbf{Tésis:} $\{\vec{a}_1, \vec{a}_2, \hdots, \vec{a}_n\}$ Conjunto L.I.\\
+\textbf{Demostración:} \\
+Sea $\alpha_1\vec{a}_1 + \alpha_2\vec{a}_2 + \hdots + \alpha_n\vec{a}_n$ = $\vec{0}$ \\Debemos probar que $\alpha_1=\alpha_2=\cdots=\alpha_n=0$ \\
+Sabemos que $(\vec{a}_i\cdot\vec{a}_j) = 0$ $\forall i \neq j$\\
+Multiplicando ambos miembros por $\vec{a}_1$ y aplicando propiedad distributiva en el primer miembro nos queda: 
+$\alpha_1\cdot(\vec{a}_1\cdot\vec{a}_1) + \alpha_2\cdot(\vec{a}_1\cdot\vec{a}_2) + \cdots + \alpha_n(\vec{a}_1\cdot\vec{a}_n)$ = $(\vec{a}_1\cdot\vec{0})$\\
+$\alpha_1\cdot\parallel\vec{a}_1\parallel^2$ = $0$ y como $\parallel\vec{a}_1\parallel^2 \neq 0$ resulta $\alpha_1 = 0$\\
+De la misma manera, multiplicando por los demás vectores nos queda $\alpha_2=\alpha_3=\cdots=\alpha_n=0$\\
+Que es lo que queríamos demostrar.
+\subsection{Proceso de Grand Smith}
+En todo espacio euclídeo V existe una base ortonormal.\\
+\textbf{Hipótesis:} V e.e. $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ base de V \\
+\textbf{Tésis:} $\exists \{\vec{w}_1, \vec{w}_2, \hdots, \vec{w}_n\}$ base ortonormal de V\\
+\textbf{Demostración:} Lo vamos a demostrar para $n=3$\\
+Sea $\vec{u}_1 = \vec{e}_1$ ; $\vec{u}_2 = \vec{e}_2 + \alpha\cdot\vec{u}_1$ , $\vec{u}_2 \in V$ (¿Por qué?)\\
+Queremos determinar $\alpha$ para que $(\vec{u}_1\cdot\vec{u}_2) = 0$ $\rightarrow$ \\
+$(\vec{u}_1\cdot\vec{u}_2)$ = $ (\vec{u}_1\cdot\vec{e}_2) + \alpha\cdot\parallel\vec{u}_1\parallel^2 $ = $0$\\\\
+Despejando $\alpha$ = $- \dfrac{(\vec{u}_1\cdot\vec{e}_2)}{\parallel\vec{u}_1\parallel^2}$ \indent donde seguro $\parallel\vec{u}_1\parallel^2 \neq 0$ (¿Por qué?) \\\\
+Podemos reemplazar y obtener ahora $\vec{u}_2$\\\\
+$\vec{u}_2$ = $\vec{e}_2 - \vec{u}_1 \cdot \dfrac{(\vec{u}_1\cdot\vec{e}_2)}{\parallel\vec{u}_1\parallel^2}$\\\\
+Ahora armamos
+\begin{equation}
+\vec{u}_3 = \vec{e}_3 + \theta \cdot \vec{u}_1 + \mu \cdot \vec{u}_2\\
+\end{equation} 
+Queremos obtener $\theta$ y $\mu$ de manera tal que $\vec{u}_3\perp\vec{u}_1$ y $\vec{u}_3\perp\vec{u}_2$
+\newpage
+\noindent Multiplicamos (1) por $\vec{u}_1$ y nos queda: \\
+$(\vec{u}_3\cdot\vec{u}_1)$ = $(\vec{e}_3\cdot\vec{u}_1) + \theta\cdot(\vec{u}_1\cdot\vec{u}_1) + \mu \cdot (\vec{u}_1\cdot\vec{u}_2)$ \\
+$(\vec{u}_3\cdot\vec{u}_1)$ = $(\vec{e}_3\cdot\vec{u}_1) + \theta\cdot\parallel\vec{u}_1\parallel^2 +$ $0$ (¿Por qué?)\\
+Igualando a cero para que sean ortogonales: \\
+$(\vec{e}_3\cdot\vec{u}_1) + \theta\cdot\parallel\vec{u}_1\parallel^2$ = 0\\\\
+$\rightarrow$ $\theta$ = $- \dfrac{(\vec{e}_3\cdot\vec{u}_1)}{\parallel\vec{u}_1\parallel^2}$\\\\
+Ahora multiplicamos (1) por $\vec{u}_2$ y nos queda:\\
+$(\vec{u}_3\cdot\vec{u}_2)$ = $(\vec{e}_3\cdot\vec{u}_2) + \theta\cdot(\vec{u}_1\cdot\vec{u}_2) + \mu \cdot (\vec{u}_2\cdot\vec{u}_2)$ \\
+$(\vec{u}_3\cdot\vec{u}_2)$ = $(\vec{e}_3\cdot\vec{u}_2)$ + 0 + $\theta\cdot\parallel\vec{u}_2\parallel^2$\\
+Igualando a cero para que sean ortogonales: \\
+$(\vec{e}_3\cdot\vec{u}_2) + \mu\cdot\parallel\vec{u}_2\parallel^2$ = 0\\\\
+$\rightarrow$ $\mu$ = $- \dfrac{(\vec{e}_3\cdot\vec{u}_2)}{\parallel\vec{u}_2\parallel^2}$\\\\
+Podemos reemplazar y obtener ahora $\vec{u}_3$: \\\\
+$\vec{u}_3$ = $\vec{e}_3$ - $\dfrac{(\vec{e}_3\cdot\vec{u}_1)}{\parallel\vec{u}_1\parallel^2}$ $\cdot\vec{u}_1$ - $\dfrac{(\vec{e}_3\cdot\vec{u}_2)}{\parallel\vec{u}_2\parallel^2}$ $\cdot\vec{u}_2$  \\\\
+Por lo tanto $\{\vec{u}_1,\vec{u}_2,\vec{u}_3\}$ forman una base ortogonal de V. (¿Por qué seguro es base de V?)\\
+Como queremos una base ortonormal dividimos a cada vector por su norma y nos queda: \\
+$\vec{w}_1 = \dfrac{\vec{u}_1}{\parallel\vec{u}_1\parallel}$ \\\\
+$\vec{w}_2 = \dfrac{\vec{u}_2}{\parallel\vec{u}_2\parallel}$ \\\\
+$\vec{w}_3 = \dfrac{\vec{u}_3}{\parallel\vec{u}_3\parallel}$ \\\\
+$\Rightarrow$ $\{\vec{w}_1,\vec{w}_2,\vec{w}_3\}$ es una base ortonormal de V.
 \end{document}
