@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+% -------------  Margenes ---------------
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+% ------------- /Margenes ---------------
+% ------------- Espaciado entre lineas ---------------
+\renewcommand{\baselinestretch}{1.5} 
+% !TeX spellcheck = es_ES
+\title{Producto Interno}
+\author{Álgebra II}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+% ------------- Comienza el documento ---------------
+\section{Definiciones}
+\subsection{Producto Interno}
+\textbf{Definición:} Un producto interno o escalar sobre un espacio vectorial real V  es una función \\
+p: $VxV$ $\rightarrow \rm I\!R $ que cumple con las siguientes propiedades:
+\begin{enumerate}
+\item $(\vec{x}\cdot\vec{y})=(\vec{y}\cdot\vec{x})$ 
+\item $((\vec{x}+\vec{y})\cdot\vec{z})=(\vec{x}\cdot\vec{z})+(\vec{y}\cdot\vec{z})$
+\item $(\lambda\cdot\vec{x}\cdot\vec{y}) = \lambda\cdot(\vec{x}\cdot\vec{y})$
+\item I) $ $ $(\vec{x}\cdot\vec{x} \geq 0)$ \\ II) $(\vec{x}\cdot\vec{x}) = 0 \leftrightarrow \vec{x}=0 $
+\end{enumerate}
+\subsection{Espacio Euclideo}
+Si V es un e.v. en el que se ha definido un producto interno recibe el nombre de espacio euclídeo. 
+\subsection{Definiciones en un espacio euclideo}
+\begin{itemize}
+\item Norma de un vector: $\parallel\vec{x}\parallel^2 = (\vec{x}\cdot\vec{x})$\\
+a) Con cualquier producto interno, el único vector de norma cero es el $\vec{0}$ (¿Por qué?)\\
+b) $\parallel\vec{x}\parallel$ = $\parallel-\vec{x}\parallel$ (¿Por qué?)\\
+c) $\parallel\alpha\cdot\vec{x}\parallel$ = $\mid\alpha\mid\cdot\parallel\vec{x}\parallel$ (¿Por qué?)
+\item Distancia entre dos vectores: \\$dist(\vec{x},\vec{y})$ = $\parallel\vec{x}-\vec{y}\parallel$
+\item Ángulo entre dos vectores: \\$\cos \phi = \dfrac{\vec{x}\cdot\vec{y}}{\parallel\vec{x}\parallel\cdot\parallel\vec{y}\parallel}$
+\item Ortogonalidad entre vectores: \\
+Dos vectores $\vec{x}$ e $\vec{y}$ son ortogonales $\leftrightarrow$ $\vec{x}\cdot\vec{y}$ = $0$
+\newpage
+\item Conjunto Ortogonal de Vectores: \\
+Un conjunto $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ es un conjunto ortogonal $\leftrightarrow$ $\vec{e}_i \neq \vec{0}$ $\forall i$ y $(\vec{e}_i\cdot\vec{e}_j)$ = $0$ $\forall i \neq j$
+\item Conjunto Ortonormal de Vectores: \\
+Un conjunto $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ es ortonormal $\leftrightarrow$ es ortogonal y la norma de sus vectores es 1.
+\end{itemize}
+% ----------------------- Proposiciones ----------------------
+\section{Proposiciones}
+\subsection{Teorema de Pitágoras}
+Cualquiera sean vectores $\vec{x}$ e $\vec{y}$ vectores pertenecientes a $V e.e.$ tal que $\vec{x}\perp\vec{y}$ se cumple: \\
+\centerline {$\parallel\vec{x}+\vec{y}\parallel^2$ = $\parallel\vec{x}\parallel^2$ + $\parallel\vec{y}\parallel^2$}\\
+\textbf{Hipótesis:} V e.e. $\vec{x}, \vec{y} \in V$ $\vec{x}\perp\vec{y}$\\
+\textbf{Tésis:} $\parallel\vec{x}+\vec{y}\parallel^2$ = $\parallel\vec{x}\parallel^2$ + $\parallel\vec{y}\parallel^2$ \\
+\textbf {Demostración:}\\
+$\parallel\vec{x}+\vec{y}\parallel^2$ = $(\vec{x} + \vec{y})\cdot(\vec{x} + \vec{y}) \rightarrow$ Expreso la norma como producto \\ 
+ = $(\vec{x}\cdot\vec{x}) + (\vec{x}\cdot\vec{y}) + (\vec{y}\cdot\vec{x})+ (\vec{y}\cdot\vec{y}) \rightarrow$ Distribuyo por propiedad 2 \\
+ = $\parallel\vec{x}\parallel^2$+  0  +  0  +$\parallel\vec{y}\parallel^2$ (¿Por qué?) \\
+O sea hemos llegado a la tesis
+\subsection{Desigualdad de Schwarz}
+Cualquiera sea $\vec{x}$ e $\vec{y} \in $ V e.e. se cumple: \\
+$\mid(\vec{x}\cdot\vec{y})\mid$ $\leq$ $\parallel\vec{x}\parallel \cdot \parallel\vec{y}\parallel $ \\
+Esta demostración es necesaria para que esté bien definido el ángulo entre dos vectores (¿Por qué?)\\
+\textbf{Hipótesis:} V e.e. $\vec{x}$ e $\vec{y} \in V$ \\
+\textbf{Tésis:} $\mid(\vec{x}\cdot\vec{y})\mid$ $\leq$ $\parallel\vec{x}\parallel \cdot \parallel\vec{y}\parallel $ \\
+\textbf {Demostración:} \\
+Para realizar esta demostración, definimos: $\vec{z} = \vec{x} + \alpha\cdot\vec{y}$ \\
+Entonces podemos afirmar $((\vec{x} + \alpha\cdot\vec{y})\cdot(\vec{x} + \alpha\cdot\vec{y})) \geq 0$\\
+Aplicando propiedades de producto interno (¿Cuales?) nos queda: \\
+$\parallel\vec{x}\parallel^2 +$ 2 $\alpha\cdot(\vec{x}\cdot\vec{y}) + \alpha^2 \cdot \parallel\vec{y}\parallel^2$ $\geq 0$\\
+Esta expresión representa geométricamente una parábola una parábola de variable $\alpha$, la cual es siempre $\geq$ 0. Entonces tiene 1 o ninguna o 
+\end{document}
