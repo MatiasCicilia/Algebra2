@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  7 APR 2017 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.3.11)  1 MAY 2017 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
 (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(e:/Developer/texlive/2016/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(e:/Developer/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -418,21 +418,33 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count99
 ))
+(e:/Developer/texlive/2016/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
 (./Producto Interno.aux)
 \openout1 = `"Producto Interno.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 (e:/Developer/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -448,108 +460,127 @@ LaTeX Font Info:    ... okay on input line 20.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks22
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
  (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
  [1
 
 {e:/Developer/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 64--77
 
- []
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 94--105
+Underfull \hbox (badness 10000) in paragraph at lines 83--89
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--105
+Underfull \hbox (badness 10000) in paragraph at lines 101--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--105
+Underfull \hbox (badness 10000) in paragraph at lines 101--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--105
+Underfull \hbox (badness 10000) in paragraph at lines 101--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--112
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 114--136
+
+ []
+
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 200--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--130
+Underfull \hbox (badness 10000) in paragraph at lines 200--219
 
  []
 
-[4] [5] (./Producto Interno.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--219
+
+ []
+
+[7] [8] (./Producto Interno.aux) ) 
 Here is how much of TeX's memory you used:
- 1921 strings out of 494945
- 22903 string characters out of 6180553
- 83583 words of memory out of 5000000
- 5231 multiletter control sequences out of 15000+600000
- 9023 words of font info for 33 fonts, out of 8000000 for 9000
+ 2055 strings out of 494945
+ 24399 string characters out of 6180553
+ 86674 words of memory out of 5000000
+ 5361 multiletter control sequences out of 15000+600000
+ 9709 words of font info for 35 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,7n,20p,282b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,12n,43p,308b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
 <e:/Developer/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb><e:/Developer/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Producto Interno.pdf" (5 pages, 118175 bytes).
+/type1/public/amsfonts/cm/cmex10.pfb><e:/Developer/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><e:/Developer/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb><e:/Developer/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Producto Interno.pdf" (8 pages, 150785 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 79 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

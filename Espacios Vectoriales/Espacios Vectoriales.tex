@@ -1,7 +1,16 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{color}
+% -------------  Header   ---------------
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyheadoffset{2pt}
+\fancyhead[L]{Algebra II}
+\fancyhead[R]{Universidad Austral}
 % -------------  Margenes ---------------
 \addtolength{\oddsidemargin}{-.875in}
 	\addtolength{\evensidemargin}{-.875in}
@@ -22,13 +31,12 @@
 % ------------- Comienza el documento ---------------
 \section{Definición}
 Sea V un conjunto cuyos elementos se llamarán vectores en
-el cual se definen dos operaciones :
-
+el cual se definen dos operaciones:
 \begin{itemize}
 \item Suma de vectores
 \item Producto de un vector por un escalar k $\in {\rm I\!R}$\
 \end{itemize}
-Estas operaciones cumplen las siguientes propiedades:\\\\
+Estas operaciones cumplen las siguientes propiedades:\\
 \underline {Propiedades de la Suma:}
 \begin{enumerate}
 \item {\bfseries Cerrada:} Si $\vec{u}, \vec{v} \in V \Rightarrow \vec{u}+\vec{v} \in V$
@@ -48,7 +56,7 @@ Estas operaciones cumplen las siguientes propiedades:\\\\
 \newpage
 % ------------- Subespacios ---------------
 \section{Subespacios} 
-{\bfseries Definición:} Un subconjunto S no vacío de V e.v.es un subespacio de V si la suma y el producto definidas en  V estructuran también a S como un espacio vectorial \\
+{\bfseries Definición:} Un subconjunto S no vacío de V e.v.es un subespacio de V si la suma y el producto definidas en  V estructuran también a S como un espacio vectorial. \\
 \underline {Propiedades necesarias para que S $\subseteq$ V sea subespacio}
 \begin{enumerate}
 \item Si $\vec{x} \in S$ e $\vec{y} \in S \Rightarrow \vec{x} + \vec{y} \in S$
@@ -60,39 +68,39 @@ Estas operaciones cumplen las siguientes propiedades:\\\\
 \item {\bfseries Combinación Lineal:} $\vec{x}$ es una combinación lineal de los vectores $\vec{x}_{1}, \vec{x}_2,... \vec{x}_k $ si existen escalares $k_{1}, k_{2},... k_{k} $ tal que $\vec{x} = k_{1}\vec{x}_{1} + k_{2}\vec{x}_{2} +... k_{k}\vec{x}_{k}$
 \item {\bfseries Sistema de Generadores:} Un conjunto de vectores M = \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_k $\} es un sistema de generadores de V $\Leftrightarrow \forall $ $ \vec{v} \in V, \vec{v} = \alpha_{1}\vec{x}_{1} + \alpha_{2}\vec{x}_{2} +... \alpha_{k}\vec{x}_{k}$
 \item {\bfseries Conjunto de vectores linealmente independiente y linealmente dependiente:}\\
-Sea M = \{ $\vec{v}_{1}, \vec{v}_2,... \vec{v}_k $ \} tal que $\vec{v}_{i} \in$ V $\forall $ i, y sea $\alpha_{1}\vec{x}_{1} + \alpha_{2}\vec{x}_{2} +... \alpha_{k}\vec{x}_{k} = \vec{0}$ (o sea una combinación lineal de ellos igualada a $\vec{0}$)\\
-Nos queda entonces un sistema lineal homogéneo que puede tener:\\\\
+Sea M = \{ $\vec{v}_{1}, \vec{v}_2,\hdots, \vec{v}_k $ \} tal que $\vec{v}_{i} \in$ V $\forall $ i, y sea $\alpha_{1}\vec{x}_{1} + \alpha_{2}\vec{x}_{2} + \hdots + \alpha_{k}\vec{x}_{k} = \vec{0}$ (o sea una combinación lineal de ellos igualada a $\vec{0}$)\\
+Nos queda entonces un sistema lineal homogéneo que puede tener:\\
 a) \underline{Solución Única:} La unica solución es la trivial, por lo que M es un conjunto {\bfseries Linealmente Independiente (L.I.)}\\
 b) \underline{Infinitas Soluciones:} M es un conjunto {\bfseries Linealmente Dependiente (L.D.)}
 \end{enumerate}
 \newpage
 % ------------- Base ---------------
 \section{Base de un Espacio Vectorial}
-{\bfseries Definición:} Dado V e.v. y B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} tal que $\forall$ $\vec{v}_{i} \in$ V decimos que B es una base de V si y sólo si se cumple:\\\\
+{\bfseries Definición:} Dado V e.v. y B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} tal que $\forall$ $\vec{v}_{i} \in$ V decimos que B es una base de V si y sólo si se cumple:\\
 a) B es un conjunto L.I.\\
-b) B es un sistema de generadores de V \\\\
+b) B es un sistema de generadores de V \\
 Ejemplos de bases canónicas: 
 \begin{itemize}
-\item {\bfseries En R$^{n}$:} (1,0,0,...,0), (0,1,0,...,0),... (0,0,0...,1) 
+\item {\bfseries En R$^{n}$:} (1,0,0,...,0), (0,1,0,...,0), ... , (0,0,0...,1) 
 \item {\bfseries En R$^{2x2}$:} $\begin{pmatrix} 1&0\\ 0&0 \end{pmatrix}$ , $\begin{pmatrix} 0&1\\ 0&0 \end{pmatrix}$ , $\begin{pmatrix} 0&0\\ 1&0 \end{pmatrix}$ , $\begin{pmatrix} 0&0\\ 0&1 \end{pmatrix}$ 
-\item {\bfseries En P$_{n}$:} \{1, x, x$^2$,... x$^n$ \} 
+\item {\bfseries En P$_{n}$:} \{1, x, x$^2$, ... , x$^n$ \} 
 \end{itemize}
 % ------------- Esto lo movi de su lugar original. Preguntar ---------------
 \subsection{Dimensión de un Espacio Vectorial}
 {\bfseries Definición:} Se llama dimensión de un espacio vectorial V a la cantidad de elementos que tiene una base.
 % ------------- Coordenadas ---------------
 \section{Coordenadas de un vector respecto de una base}
-Dado B = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} una base de V (e.v.) y dado $\vec{x} \in V$\\ 
-$\Rightarrow$ Se denomina a los escalares $\lambda_{1}, \lambda_{2},... \lambda_{n}$ tal que $\vec{x} = \lambda_{1}\vec{e}_{1} + \lambda_{2}\vec{e}_{2} +... \lambda_{k}\vec{e}_{k}$ como {\bfseries coordenadas de} $\vec{x} $ respecto de la base B y se escribe $\vec{x}]_B$ \\
-Por lo tanto: $\vec{x}]_B$ = ($\lambda_{1}, \lambda_{2},... \lambda_{n}$)
+Dado B = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} una base de V (e.v.) y dado $\vec{x} \in V$ $\Rightarrow$\\ 
+Se denomina a los escalares $\lambda_{1}, \lambda_{2},... \lambda_{n}$ tal que $\vec{x} = \lambda_{1}\vec{e}_{1} + \lambda_{2}\vec{e}_{2} +... \lambda_{k}\vec{e}_{k}$ como {\bfseries coordenadas de} $\vec{x} $ respecto de la base B y se escribe $\vec{x}]_B$ \\
+Por lo tanto: $\vec{x}]_B$ = ($\lambda_{1}, \lambda_{2},\hdots, \lambda_{n}$)
 \newpage
 % ------------- Proposiciones ---------------
 \section{Proposiciones}
 % ------------- Coordenadas Unicas ---------------
 \subsection{Las coordenadas de un vector respecto de una base 
 son únicas}
-{\bfseries \textcolor{blue}{Hipótesis:}} V e.v. \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} base de V, $\vec{x} \in V$ \\
-{\bfseries \textcolor{red}{Tesis:}} Existe una única n-upla ($\alpha_{1}, \alpha_{2},... \alpha_{n}$) tal que $\vec{x} = \alpha_{1}\vec{e}_{1} + \alpha_{2}\vec{e}_{2} +... \alpha_{n}\vec{e}_{n}$\\
+{\bfseries {Hipótesis:}} V e.v. \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} base de V, $\vec{x} \in V$ \\
+{\bfseries {Tesis:}} Existe una única n-upla ($\alpha_{1}, \alpha_{2},... \alpha_{n}$) tal que $\vec{x} = \alpha_{1}\vec{e}_{1} + \alpha_{2}\vec{e}_{2} +... \alpha_{n}\vec{e}_{n}$\\
 {\bfseries Demostración:} Supongo que existen 2 n-uplas que satisfacen la definición de coordenadas respecto de una base, es decir:\\
 $\vec{x} = \alpha_{1}\vec{e}_{1} + \alpha_{2}\vec{e}_{2} +... \alpha_{n}\vec{e}_{n} = \beta_{1}\vec{e}_{1} + \beta_{2}\vec{e}_{2} +... \beta_{n}\vec{e}_{n}$\\
 Pasando al segundo miembro y sacando factor común $\vec{e}_i$ nos queda: \\
@@ -103,10 +111,9 @@ Por lo tanto, $\alpha_{i} = \beta_{i}$ $\forall$ i.
 \subsection{Si un espacio vectorial tiene una  base de n 
 elementos , entonces cualquier conjunto de n+1 
 elementos es un conjunto l.d.}
-{\bfseries \textcolor{blue}{Hipótesis:}} V e.v. B = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} base de V, \{$\vec{x}_{1}, \vec{x}_2,\hdots, \vec{x}_n, \vec{x}_{n+1} $\} conjunto de n+1 elementos\\
-{\bfseries \textcolor{red}{Tesis:}} \{$\vec{x}_{1}, \vec{x}_2,\hdots, \vec{x}_n, \vec{x}_{n+1} $\} es L.D.\\
-{\bfseries Demostración:} Para demostrar si un conjunto es l.i.  debo probar 
-que cualquier combinación lineal de sus vectores igualada a $\vec{0}$ tiene una única solución (La solución trivial). Para probar que es L.D., una combinación lineal de dichos vectores igualada a $\vec{0}$ tendrá infinitas soluciones. \\ Hagamos entonces: 
+{\bfseries {Hipótesis:}} V e.v. B = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} base de V, \{$\vec{x}_{1}, \vec{x}_2,\hdots, \vec{x}_n, \vec{x}_{n+1} $\} conjunto de n+1 elementos\\
+{\bfseries {Tesis:}} \{$\vec{x}_{1}, \vec{x}_2,\hdots, \vec{x}_n, \vec{x}_{n+1} $\} es L.D.\\
+{\bfseries Demostración:} Para demostrar que un conjunto es L.I.  debo probar que cualquier combinación lineal de sus vectores igualada a $\vec{0}$ tiene una única solución (La solución trivial). Para probar que es L.D., una combinación lineal de dichos vectores igualada a $\vec{0}$ tendrá infinitas soluciones. \\ Hagamos entonces: 
 \begin{align}
 \lambda_1\vec{x}_1+\lambda_2\vec{x}_2+\hdots+\lambda_{n+1}\vec{x}_{n+1} = \vec{0}
 \end{align}
@@ -119,8 +126,6 @@ Reemplazando en la ecuación (1) nos queda:\\
 $\lambda_1\cdot(\alpha_{11}\cdot\vec{e}_1+\alpha_{12}\cdot\vec{e}_2+\hdots+\alpha_{1n}\cdot\vec{e}_n) + \lambda_2\cdot(\alpha_{21}\cdot\vec{e}_1+\alpha_{22}\cdot\vec{e}_2+\hdots+\alpha_{2n}\cdot\vec{e}_n) + \hdots \lambda_{n+1}\cdot(\alpha_{n+1,1}\cdot\vec{e}_1+\alpha_{n+1,2}\cdot\vec{e}_2+\hdots+\alpha_{n+1,n}\cdot\vec{e}_n)$\\
 Sacando factor $\vec{e}_i$ nos queda:
 $(\lambda_1\cdot\alpha_{11} + \lambda_2\cdot\alpha_{21} + \hdots + \lambda_{n+1}\cdot\alpha_{n+1,1})\cdot\vec{e}_1 + (\lambda_1\cdot\alpha_{12} + \lambda_2\cdot\alpha_{22} + \hdots + \lambda_{n+1}\cdot\alpha_{n+1,2})\cdot\vec{e}_2 + \hdots + (\lambda_1\cdot\alpha_{1n} + \lambda_2\cdot\alpha_{2n} + \hdots + \lambda_{n+1}\cdot\alpha_{n+1,n})\cdot\vec{e}_n$\\
-\newpage
-{\textit{(Continúa $\rightarrow$ Demostración 5.2)}} \\
 Como tenemos una combinación lineal igualada a cero de vectores L.I. sus escalares serán todos iguales a 0\\
 Entonces nos queda: \\
 $\lambda_1\cdot\alpha_{11} + \lambda_2\cdot\alpha_{21} + \hdots + \lambda_{n+1}\cdot\alpha_{n+1,1} = 0$\\
@@ -129,30 +134,28 @@ $\vdots$\\
 $\lambda_1\cdot\alpha_{1n} + \lambda_2\cdot\alpha_{2n} + \hdots + \lambda_{n+1}\cdot\alpha_{n+1,n}=0$\\
 Observamos que nos quedan {\bfseries n} ecuaciones.\\
 A su vez, los $\alpha_{ij}$ son datos, pues son las coordenadas de los vectores dados (las cuales son únicas)\\
-Por otro lado, los $\lambda_i$ son incógnitas, y hay {\bfseries n+1}.\\
+Por otro lado, los $\lambda_i$ son incógnitas, y hay \textbf{n + 1}.\\
 Es decir, tenemos un sistema con más incógnitas que ecuaciones y por lo tanto la ecuación (1) tiene {\bfseries infinitas} soluciones. \\
 Concluimos entonces que el conjunto \{$\vec{x}_{1}, \vec{x}_2,\hdots, \vec{x}_n, \vec{x}_{n+1} $\} es L.D.
 % ------------- Mismo # elementos en distintas bases --------------- 
 \subsection{Todas las bases de un mismo espacio vectorial tienen la misma cantidad de elementos}
-{\bfseries \textcolor{blue}{Hipótesis:}} V e.v. \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} y \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} bases de V\\
-{\bfseries \textcolor{red}{Tesis:}} Ambas bases tienen la misma cantidad de elementos. (n = p)\\
+{\bfseries {Hipótesis:}} V e.v. \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} y \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_p $\} bases de V\\
+{\bfseries {Tesis:}} Ambas bases tienen la misma cantidad de elementos. (n = p)\\
 {\bfseries Demostración:} Supongo $n>p$. Como tengo una base de p elementos, si tengo un conjunto con al menos un elemento mas, será L.D.\\
 Entonces \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} sería un conjunto L.D. Absurdo pues al ser una base debe ser un conjunto L.I.\\
 Lo mismo ocurre al asumir $p>n$. Por lo tanto la única opción posible es {\bfseries n = p}
 \subsection{Si un conjunto de vectores pertenecientes a un e.v. es un conjunto l.d.entonces alguno de ellos es combinación lineal de los demás }
-{\bfseries \textcolor{blue}{Hipótesis:}} V e.v. A = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} conjunto L.D. de vectores pertenecientes a V \\
-{\bfseries \textcolor{red}{Tesis:}} $\exists$ j tal que $\vec{e}_j = \alpha_1\cdot\vec{e}_1 + \alpha_2\cdot\vec{e}_2 + \hdots + \alpha_{j-1}\cdot\vec{e}_{j-1} + \alpha_{j+1}\cdot\vec{e}_{j+1} + \hdots + \alpha_n\vec{e}_n$\\
+{\bfseries {Hipótesis:}} V e.v. A = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} conjunto L.D. de vectores pertenecientes a V \\
+{\bfseries {Tesis:}} $\exists$ j tal que $\vec{e}_j = \alpha_1\cdot\vec{e}_1 + \alpha_2\cdot\vec{e}_2 + \hdots + \alpha_{j-1}\cdot\vec{e}_{j-1} + \alpha_{j+1}\cdot\vec{e}_{j+1} + \hdots + \alpha_n\vec{e}_n$\\
 {\bfseries Demostración:} Como A es un conjunto L.D. , dada una combinación lineal de ellos igualada a 0  , el sistema homogéneo que obtengo tendrá infinitas soluciones. \\
 Entonces, dada $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n} = \vec{0}$ existirá una n-upla ($\alpha_1,\alpha_2,\hdots,\alpha_n)$ no todos nulos que satisfagan la ecuación.\\
 Supongamos $\alpha_1 \neq 0$ entonces podré despejar \\
 $\vec{e}_1 = -\frac{\alpha_2}{\alpha_1} \vec{e}_2 - \hdots - \frac{\alpha_n}{\alpha_1}\vec{e}_n$\\
 Por lo que ha quedado expresado uno de los vectores como combinación lineal de los demás. 
-\newpage
 \subsection{Si un S.G. de un espacio vectorial V es L.D. entonces existe un subconjunto de él de n-1 elementos que es S.G. de V .}
-{\bfseries \textcolor{blue}{Hipótesis:}} V e.v. B= \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} S.G. de V, B conjunto L.D. \\
-{\bfseries \textcolor{red}{Tesis:}} $\vec{e}_1 , \vec{e}_2 , \hdots , \vec{e}_{j-1} , \vec{e}_{j+1} , \hdots , \vec{e}_n$ S.G. de V\\
+{\bfseries {Hipótesis:}} V e.v. B= \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} S.G. de V, B conjunto L.D. \\
+{\bfseries {Tesis:}} $\vec{e}_1 , \vec{e}_2 , \hdots , \vec{e}_{j-1} , \vec{e}_{j+1} , \hdots , \vec{e}_n$ S.G. de V\\
 {\bfseries Demostración:} Quiero probar que algo es S.G. de V, entonces tomo un $\vec{x}$ $\in$ V. Entonces seguro\\ $\vec{x}$ = $\beta_1\vec{e}_1+\beta_2\vec{e}_2+\cdots+\beta_n\vec{e}_n$ (¿Por qué?). Como B es un conjunto L.D. entonces uno de los vectores será combinación lineal de los demás. Supongamos $\vec{e}_1$ o sea: \\
 $\vec{e}_1$ = $-\dfrac{\alpha_2}{\alpha_1}\cdot\vec{e}_2 - \cdots - \dfrac{\alpha_n}{\alpha_1}\cdot\vec{e}_n$ . Reemplazando en $\vec{x}$ nos queda: \\
 $\vec{x}$ = $\beta_1 \cdot (-\dfrac{\alpha_2}{\alpha_1}\cdot\vec{e}_2 - \cdots - \dfrac{\alpha_n}{\alpha_1}\cdot\vec{e}_n)+\beta_2\vec{e}_2+\cdots+\beta_n\vec{e}_n $. Sacando factor común queda expresado\\ $\vec{x}$ = $\vec{e}_2(- \dfrac{\alpha_2}{\alpha_1})$  
-
 \end{document}

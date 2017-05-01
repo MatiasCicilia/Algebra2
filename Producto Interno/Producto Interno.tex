@@ -1,7 +1,16 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{color}
+% -------------  Header   ---------------
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyheadoffset{2pt}
+\fancyhead[L]{Algebra II}
+\fancyhead[R]{Universidad Austral}
 % -------------  Margenes ---------------
 \addtolength{\oddsidemargin}{-.875in}
 	\addtolength{\evensidemargin}{-.875in}
@@ -23,18 +32,18 @@
 \section{Definiciones}
 \subsection{Producto Interno}
 \textbf{Definición:} Un producto interno o escalar sobre un espacio vectorial real V  es una función \\
-p: $VxV$ $\rightarrow \rm I\!R $ que cumple con las siguientes propiedades:
+p: VxV $\rightarrow \rm I\!R $ que cumple con las siguientes propiedades:
 \begin{enumerate}
 \item $(\vec{x}\cdot\vec{y})=(\vec{y}\cdot\vec{x})$ 
 \item $((\vec{x}+\vec{y})\cdot\vec{z})=(\vec{x}\cdot\vec{z})+(\vec{y}\cdot\vec{z})$
 \item $(\lambda\cdot\vec{x}\cdot\vec{y}) = \lambda\cdot(\vec{x}\cdot\vec{y})$
-\item I) $ $ $(\vec{x}\cdot\vec{x} \geq 0)$ \\ II) $(\vec{x}\cdot\vec{x}) = 0 \leftrightarrow \vec{x}=0 $
+\item I) $ $ $(\vec{x}\cdot\vec{x}) \geq 0$ \\ II) $(\vec{x}\cdot\vec{x}) = 0 \leftrightarrow \vec{x}=0 $
 \end{enumerate}
 \subsection{Espacio Euclideo}
-Si V es un e.v. en el que se ha definido un producto interno recibe el nombre de espacio euclídeo. 
+Si V es un e.v. en el que se ha definido un producto interno, recibe el nombre de espacio euclídeo. 
 \subsection{Definiciones en un espacio euclideo}
 \begin{itemize}
-\item Norma de un vector: $\parallel\vec{x}\parallel^2 = (\vec{x}\cdot\vec{x})$\\
+\item Norma de un vector: $\parallel\vec{x}\parallel^2$ = $(\vec{x}\cdot\vec{x})$\\
 a) Con cualquier producto interno, el único vector de norma cero es el $\vec{0}$ (¿Por qué?)\\
 b) $\parallel\vec{x}\parallel$ = $\parallel-\vec{x}\parallel$ (¿Por qué?)\\
 c) $\parallel\alpha\cdot\vec{x}\parallel$ = $\mid\alpha\mid\cdot\parallel\vec{x}\parallel$ (¿Por qué?)
@@ -42,7 +51,6 @@ c) $\parallel\alpha\cdot\vec{x}\parallel$ = $\mid\alpha\mid\cdot\parallel\vec{x}
 \item Ángulo entre dos vectores: \\$\cos \phi = \dfrac{\vec{x}\cdot\vec{y}}{\parallel\vec{x}\parallel\cdot\parallel\vec{y}\parallel}$
 \item Ortogonalidad entre vectores: \\
 Dos vectores $\vec{x}$ e $\vec{y}$ son ortogonales $\leftrightarrow$ $\vec{x}\cdot\vec{y}$ = $0$
-\newpage
 \item Conjunto Ortogonal de Vectores: \\
 Un conjunto $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ es un conjunto ortogonal $\leftrightarrow$ $\vec{e}_i \neq \vec{0}$ $\forall i$ y $(\vec{e}_i\cdot\vec{e}_j)$ = $0$ $\forall i \neq j$
 \item Conjunto Ortonormal de Vectores: \\
@@ -69,12 +77,11 @@ Esta demostración es necesaria para que esté bien definido el ángulo entre do
 \textbf {Demostración:} \\
 Para realizar esta demostración, definimos: $\vec{z} = \vec{x} + \alpha\cdot\vec{y}$ \\
 Entonces podemos afirmar $((\vec{x} + \alpha\cdot\vec{y})\cdot(\vec{x} + \alpha\cdot\vec{y})) \geq 0$\\
-Aplicando propiedades de producto interno (¿Cuales?) nos queda: \\
+Aplicando propiedades de producto interno (¿Cuáles?) nos queda: \\
 $\parallel\vec{x}\parallel^2 +$ 2 $\alpha\cdot(\vec{x}\cdot\vec{y}) + \alpha^2 \cdot \parallel\vec{y}\parallel^2$ $\geq 0$
-\\
-Esta expresión representa geométricamente una parábola una parábola de variable $\alpha$, la cual \\ es siempre $\geq$ 0. Entonces tiene 1 o ninguna raíz lo que significa que al aplicar la fórmula para aplicar raíces en una parábola:\\\\
-$(\dfrac{-b\pm\sqrt{b^2-4ac}}{2a})$ \indent $\bigtriangleup$ = $b^2-4ac \leq 0$
 \newpage
+\noindent Esta expresión representa geométricamente una parábola una parábola de variable $\alpha$, la cual \\ es siempre $\geq$ 0. Entonces tiene 1 o ninguna raíz lo que significa que al aplicar la fórmula para hallar raíces en una parábola:\\\\
+$(\dfrac{-b\pm\sqrt{b^2-4ac}}{2a})$ \indent $\bigtriangleup$ = $b^2-4ac \leq 0$
 \noindent En nuestro caso resulta: \\
 $(2\cdot(\vec{x}\cdot\vec{y}))^2 -4 \cdot \parallel\vec{y}\parallel^2 \parallel\vec{x}\parallel^2$  $\leq 0$\\
 $(2\cdot(\vec{x}\cdot\vec{y}))^2$ $\leq 4$ $\cdot \parallel\vec{y}\parallel^2 \parallel\vec{x}\parallel^2$ \\
@@ -106,7 +113,6 @@ Ahora armamos
 \vec{u}_3 = \vec{e}_3 + \theta \cdot \vec{u}_1 + \mu \cdot \vec{u}_2\\
 \end{equation} 
 Queremos obtener $\theta$ y $\mu$ de manera tal que $\vec{u}_3\perp\vec{u}_1$ y $\vec{u}_3\perp\vec{u}_2$
-\newpage
 \noindent Multiplicamos (1) por $\vec{u}_1$ y nos queda: \\
 $(\vec{u}_3\cdot\vec{u}_1)$ = $(\vec{e}_3\cdot\vec{u}_1) + \theta\cdot(\vec{u}_1\cdot\vec{u}_1) + \mu \cdot (\vec{u}_1\cdot\vec{u}_2)$ \\
 $(\vec{u}_3\cdot\vec{u}_1)$ = $(\vec{e}_3\cdot\vec{u}_1) + \theta\cdot\parallel\vec{u}_1\parallel^2 +$ $0$ (¿Por qué?)\\
@@ -122,16 +128,103 @@ $\rightarrow$ $\mu$ = $- \dfrac{(\vec{e}_3\cdot\vec{u}_2)}{\parallel\vec{u}_2\pa
 Podemos reemplazar y obtener ahora $\vec{u}_3$: \\\\
 $\vec{u}_3$ = $\vec{e}_3$ - $\dfrac{(\vec{e}_3\cdot\vec{u}_1)}{\parallel\vec{u}_1\parallel^2}$ $\cdot\vec{u}_1$ - $\dfrac{(\vec{e}_3\cdot\vec{u}_2)}{\parallel\vec{u}_2\parallel^2}$ $\cdot\vec{u}_2$  \\\\
 Por lo tanto $\{\vec{u}_1,\vec{u}_2,\vec{u}_3\}$ forman una base ortogonal de V. (¿Por qué seguro es base de V?)\\
-Como queremos una base ortonormal dividimos a cada vector por su norma y nos queda: \\
-$\vec{w}_1 = \dfrac{\vec{u}_1}{\parallel\vec{u}_1\parallel}$ \\\\
-$\vec{w}_2 = \dfrac{\vec{u}_2}{\parallel\vec{u}_2\parallel}$ \\\\
+Como queremos una base ortonormal dividimos a cada vector por su norma y nos queda: \\\\
+$\vec{w}_1 = \dfrac{\vec{u}_1}{\parallel\vec{u}_1\parallel}$\indent 
+$\vec{w}_2 = \dfrac{\vec{u}_2}{\parallel\vec{u}_2\parallel}$\indent 
 $\vec{w}_3 = \dfrac{\vec{u}_3}{\parallel\vec{u}_3\parallel}$ \\\\
 $\Rightarrow$ $\{\vec{w}_1,\vec{w}_2,\vec{w}_3\}$ es una base ortonormal de V.
-\newpage
 \section{Nuevas Definiciones}
 \subsection{Subespacios Ortogonales}
 Dado S y T subespacios de V e.e. decimos que S es ortogonal a T (lo escribimos $S \perp T$)\\ si y sólo si $\vec{x} \perp \vec{y}$  $\forall$ $\vec{x} \in S$ , $\forall$ $\vec{y} \in T$
 \subsection{Complemento Ortogonal de un subespacio}
 Dado S subespacio de V e.e. llamaremos\\
 $S^{\perp}$ = $\{\vec{x} \in V / \vec{x} \perp \vec{s}$ $\forall$ $\vec{s} \in V\}$ 
+\subsection{Proposición:}
+Dado S subespacio de V e.e. entonces\\
+$S \oplus S^{\perp} $ = V \\
+Debemos probar: \\
+a) $S \oplus S^{\perp} \subset V$. Esto es evidente (¿Por qué?)\\
+b) $V \subset S \oplus S^{\perp}$\\
+Sea B = $\{\vec{s}_1,\vec{s}_2,\hdots,\vec{s}_k\}$ una base ortogonal de S. Extendemos B a una base ortogonal de V, y nos queda:\\
+B' = $\{\vec{s}_1,\vec{s}_2,\hdots,\vec{s}_k,\vec{a}_1,\vec{a}_2,\hdots,\vec{a}_r\}$ base ortogonal de V. \\
+Vamos a probar que $\{\vec{a}_1,\vec{a}_2,\hdots,\vec{a}_r\}$ es una base ortogonal de $S^{\perp}$\\
+Que es un conjunto L.I. es obvio (¿Por qué?)\\
+Veamos entonces que es un S.G. de $S^{\perp}$:\\
+Sea $\vec{x} \in S^{\perp} \Rightarrow \vec{x} \in V \Rightarrow$
+\begin{equation}
+\vec{x} = \alpha_1\vec{s}_1 + \alpha_2\vec{s}_2+\hdots+\alpha_k\vec{s}_k+\beta_1\vec{a}_1+\beta_2\vec{a}_2+\hdots+\beta_r\vec{a}_r
+\end{equation}
+Sabemos que $(\vec{x}\cdot\vec{s}_i)=0$ $\forall i$ con $1 \leq i \leq k $ (¿Por qué?)\\
+Entonces multiplicamos ambos miembros de (1) por $\vec{s}_1$ y nos queda: \\
+$0=\alpha_1(\vec{s}_1\cdot\vec{s}_1) + \hdots + \alpha_k(\vec{s}_1\cdot\vec{s}_k) + \beta_1(\vec{s}_1\cdot\vec{a}_1) + \hdots + \beta_r(\vec{s}_1\cdot\vec{a}_r)$\\
+$0=\alpha_1\cdot(1) + \hdots + \alpha_k\cdot(0) + \beta_1\cdot(0) + \hdots + \beta_r\cdot(0)$\\
+$\Rightarrow$ nos queda $\alpha_1=0$\\
+De la misma manera demostraremos que $\alpha_i = 0$ $\forall i$   con $1 \leq i \leq k$\\
+Por lo tanto $\vec{x} = \beta_1\vec{a}_1+\beta_2\vec{a}_2+\hdots+\beta_r\vec{a}_r$ \\
+$\Rightarrow$ $\{\vec{a}_1,\vec{a}_2,\hdots,\vec{a}_r\}$ es S.G. de $S^{\perp}$\\
+Ahora sea $\vec{w} \in V$ $\Rightarrow$\\
+$\vec{w} = (\theta_1\vec{s}_1 + \theta_2\vec{s}_2+\hdots+\theta\vec{s}_k)+(\pi_1\vec{a}_1+\pi_2\vec{a}_2+\hdots+\pi_r\vec{a}_r)$\\
+$\vec{w}=\vec{c}+\vec{d}$ con $\vec{c} \in S$ y $\vec{d} \in S^{\perp}$\\
+$\Rightarrow \vec{w} \in S \oplus S^{\perp}$ o sea $ \subset S \oplus S^{\perp}$
+Nos falta probar que $S \cap S^{\perp} = \{\vec{0}\}$\\
+Como S y $S^{\perp}$ son subespacios de V y la intersección de subespacios es un subespacio entonces $\vec{0} \in S \cap S^{\perp}$.\\
+Sea $\vec{x} \in S \cap S^{\perp}$ $\Rightarrow$ $\vec{x} \in S$ y $\vec{x} \in S^{\perp}$\\
+$\Rightarrow$ $(\vec{x} \cdot \vec{x}) = 0$
+$\Rightarrow$ por la propiedad 4) de P.I., $\vec{x} = 0$\\
+\textbf{Corolario:} De esta proposición se deduce que: \\
+Dim V = dim $(S \oplus S^{\perp})$ = dim S + dim $S^{\perp}$
+\section{Proyección ortogonal de un vector respecto a un subespacio}
+Dado $\vec{x} \in V$ e.e. y S $\subseteq$ V, puedo escribir\\
+$\vec{x}$ = $\vec{u} + \vec{v}$ con $\vec{u} \in S$, $\vec{v} \in S^{\perp}$ (¿Por qué?)\\
+Llamamos $\vec{u}$ = $proy_S(\vec{x})$ y $\vec{v}$ = $proy_{S^{\perp}}(\vec{x})$
+\subsection{Teorema de la mejor aproximación}
+Si S es un subespacio de V e.e , y $\vec{x} \in V$ entonces $proy_S(\vec{x})$ es la mejor aproximación para $\vec{x}$ en S, o sea\\
+$\parallel \vec{v} - \vec{x} \parallel$ $\geq$ $\parallel proy_S(\vec{x}) - \vec{x} \parallel$ $\forall$ $\vec{v} \in S$\\
+\textbf{Hipótesis:} V e.e. S subespacio de V, $\vec{x} \in V$ (elemento cualquiera de V) \\
+\textbf{Tésis:} $\parallel \vec{v} - \vec{x} \parallel$ $\geq$ $\parallel proy_S(\vec{x}) - \vec{x} \parallel$ $\forall$ $\vec{v} \in S$\\
+\textbf{Demostración:} Vamos a trabajar con las normas al
+cuadrado (¿Por qué podemos hacerlo?)\\
+Sea $\vec{v} \in S$ $\Rightarrow$\\
+$\parallel \vec{v} - \vec{x} \parallel^2$ = $\parallel \vec{v} - proy_S(\vec{x}) + proy_S(\vec{x}) - \vec{x} \parallel^2$ \\
+$\parallel \vec{v} - \vec{x} \parallel^2$ = $\parallel \vec{v} - proy_S(\vec{x}) \parallel^2$ + $\parallel proy_S(\vec{x})- \vec{x} \parallel^2$ (¿Por qué?)\\
+Y por lo tanto: \\
+$\parallel \vec{v} - proy_S(\vec{x}) \parallel^2$ + $\parallel proy_S(\vec{x})- \vec{x} \parallel^2$ $\geq$ $\parallel proy_S(\vec{x})- \vec{x} \parallel^2$ (¿Por qué?)
+\newpage
+\subsection{Método de cuadrados mínimos para resolver sistemas lineales incompatibles}
+Hemos probado en un ejercicio de la práctica que un sistema lineal de la forma $A\cdot\vec{X}=\vec{B}$ es compatible $\leftrightarrow$ $\vec{B} \in col(A)$ siendo $col(A)$ = $<\vec{C}_1, \vec{C}_2, \ldots, \vec{C}_n>$ donde $\vec{C}_i$ son las columnas de la matriz A. \\
+Por lo tanto si $A\cdot\vec{X}=\vec{B}$ es un sistema incompatible, es seguro que $\vec{B} \notin col(A)$. Luego, la única manera de convertirlo en compatible consiste en buscar un vector perteneciente a $col(A)$, cometiendo el menor error posible. \\
+¿Cuál será este vector? Según lo demostrado anteriormente, este vector debe ser $proy_{col(A)}(\vec{B})$ (¿Por qué?)\\
+Osea cuando un sistema lineal $A\cdot\vec{X}=\vec{B}$ es incompatible, la mejor solución aproximada que podemos encontrar es buscando la solución de: \\
+$A\cdot\vec{X}=proy_{col(A)}(\vec{B})$
+\subsubsection{Fórmula para resolver un sistema lineal incompatible}
+Para llegar a la fórmula debemos probar:\\
+\textbf{a)} $(col(A))^{\perp}$ = $\{\vec{X} \in \rm I\!R^n$ / $A^T\cdot\vec{X}=0\}$\\
+Dado $col(A)$ = $<\vec{C}_1, \vec{C}_2, \ldots, \vec{C}_n>$ $\rightarrow$\\
+$\vec{X} \in (col(A))^{\perp}$ $\leftrightarrow$ $(\vec{X}\cdot\vec{C}_i)=0$ $\forall$ $1 \leq i \leq n$, pero:\\\\
+$A = \begin{pmatrix}
+\uparrow & \uparrow & \ldots & \uparrow\\ 
+\vec{C}_1 & \vec{C}_2 & \ldots & \vec{C}_n\\
+\downarrow & \downarrow & \ldots & \downarrow 
+\end{pmatrix}$
+\indent $\leftrightarrow$ \indent
+$A^T = \begin{pmatrix}
+\leftarrow & \vec{C}_1 & \rightarrow\\ 
+\leftarrow & \vec{C}_2 & \rightarrow\\
+\vdots & \vdots & \vdots \\
+\leftarrow & \vec{C}_n & \rightarrow 
+\end{pmatrix}$\\\\
+\textbf{b)} Demostrar que si $\vec{X}_0$ es solución por el
+método de cuadrados mínimos del sistema $A\cdot\vec{X}=\vec{B}$, entonces $(A\cdot\vec{X}_0-\vec{B})$ $\in (col(A))^{\perp}$\\
+Si $\vec{X}_0$ es solución del sistema incompatbile $A\cdot\vec{X}=\vec{B}$ $\rightarrow$\\
+\begin{equation}
+A\cdot\vec{X}_0=proy_{col(A)}(\vec{B})
+\end{equation}
+Restando en (3) $\vec{B}$ a ambos miembros nos queda:\\
+$A\cdot\vec{X}_0 - \vec{B}=proy_{col(A)}(\vec{B}) - \vec{B}$ = $proy_{col(A)^{\perp}}(\vec{B})$ (¿Por qué?)\\
+Por lo tanto, $A\cdot\vec{X}_0 - \vec{B}$ $\in$ $(col(A))^{\perp}$
+\newpage
+\noindent \textbf{c)} Demostrar que $A^T (A \cdot \vec{X}_0) = A^T \cdot \vec{B}$\\
+Si $A \cdot \vec{X}_0 - \vec{B}$ $\in$ $(col(A))^{\perp}$\\
+$\rightarrow$ $A^T (A\cdot\vec{X}_0 - \vec{B}) = 0$\\
+$\rightarrow$ $A^T (A\cdot\vec{X}_0) = A^T \cdot \vec{B}$ (¿Por qué?)
 \end{document}
