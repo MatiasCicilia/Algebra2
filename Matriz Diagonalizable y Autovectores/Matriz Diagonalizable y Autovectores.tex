@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{color}
@@ -38,8 +38,8 @@ Decimos que A es una matriz diagonalizable si y sólo si, al definir \textit{f}:
 % ------------- Prop: Diagonalizable sii base B ---------------
 \subsection{Proposición}
 A es diagonalizable $\leftrightarrow$ existe una base B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de ${\rm I\!R}^{n}$ y escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}=\lambda_{i}\cdot\vec{v}_{i}$\\
-$\Rightarrow$) {\bfseries \textcolor{blue}{Hipótesis:}} A es diagonalizable, o sea si \textit{f}: ${\rm I\!R}^{n}$ $\rightarrow$ ${\rm I\!R}^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ existe una base B tal que \textbardbl \textit{f}\textbardbl $_{BB}$ \indent es una matriz diagonal\\
-\indent{\bfseries \textcolor{red}{Tesis:}} Existen escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$ \\
+$\Rightarrow$) {\bfseries {Hipótesis:}} A es diagonalizable, o sea si \textit{f}: ${\rm I\!R}^{n}$ $\rightarrow$ ${\rm I\!R}^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ existe una base B tal que \textbardbl \textit{f}\textbardbl $_{BB}$ \indent es una matriz diagonal\\
+\indent{\bfseries {Tesis:}} Existen escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$ \\
 \textbf{Demostración:} Como \textbardbl \textit{f}\textbardbl $_{BB}$ es diagonal $\Rightarrow$ \textbardbl \textit{f}\textbardbl $_{BB}$ = $M = \begin{pmatrix} a_{11}&0&\ldots&0\\ 0&a_{22}&\ldots&0\\ \ldots&\ldots&\ddots&\ldots\\ 0&0&\ldots&a_{nn} \end{pmatrix}$ \\
 Para interpretar esta matriz, recordamos la definición de matriz de T.L. dada una base:\\
 \textit{f}($\vec{v}_{1}$) = $a_{11}\cdot\vec{v}_1 + 0\cdot\vec{v}_2 + \ldots 0\cdot\vec{v}_{n}$ = $a_{11}\cdot\vec{v}_1$\\
@@ -48,22 +48,23 @@ $\vdots$\\
 \textit{f}($\vec{v}_{n}$) = $0\cdot\vec{v}_1 + 0\cdot\vec{v}_2 + \ldots a_{nn}\cdot\vec{v}_{n}$ = $a_{nn}\cdot\vec{v}_n$ \\
 Con lo que queda demostrada la tesis. Veamos ahora la otra implicación.
 \newpage
-$\Leftarrow$) {\bfseries \textcolor{blue}{Hipótesis:}} $\exists$ base B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de $R^{n}$ y escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$\\
-\indent \indent {\bfseries \textcolor{red}{Tesis:}} A es diagonalizable \\
+\noindent $\Leftarrow$) {\bfseries {Hipótesis:}} $\exists$ base B = \{$\vec{v}_{1}, \vec{v}_2,... \vec{v}_n $\} base de $R^{n}$ y escalares $\lambda_{i}$ tal que A$\cdot\vec{v}_{i}$=$\lambda_{i}$\\
+\indent {\bfseries { Tesis:}} A es diagonalizable \\
 \textbf{Demostración:} Debemos probar que si \textit{f}: ${\rm I\!R}^{n}\rightarrow ${\rm I\!R}$^{n}$ / \textit{f}($\vec{x}$) = A $\cdot \vec{x}$ entonces \textbardbl \textit{f}\textbardbl $_{BB}$ es diagonal. \\
 Para esto, armemos \textbardbl \textit{f}\textbardbl $_{BB}$ :\\
-\textit{f}($\vec{v}_{1}$) = A$\cdot\vec{v}_1$ = $\lambda_{1}\cdot\vec{v}_{1}$ $\Rightarrow$ la 1ra columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} \lambda_{1}\\ 0\\ \vdots\\ 0 \end{pmatrix}$\\
+\textit{f}($\vec{v}_{1}$) = A$\cdot\vec{v}_1$ = $\lambda_{1}\cdot\vec{v}_{1}$ $\Rightarrow$ la 1ra columna de \textbardbl \textit{f}\textbardbl $_{B}$ será {}$ \begin{pmatrix} \lambda_{1}\\ 0\\ \vdots\\ 0 \end{pmatrix}$\\\\\\
 \textit{f}($\vec{v}_{2}$) = A$\cdot\vec{v}_2$ = $\lambda_{2}\cdot\vec{v}_{2}$ $\Rightarrow$ la 2da columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} 0 \\ \lambda_{2}\\ \vdots\\ 0 \end{pmatrix}$\\
 $\vdots$\\
-\textit{f}($\vec{v}_{n}$) = A$\cdot\vec{v}_n$ = $\lambda_{n}\cdot\vec{v}_{n}$ $\Rightarrow$ la n columna de \textbardbl \textit{f}\textbardbl $_{B}$ será $ \begin{pmatrix} 0 \\ 0\\ \vdots\\ \lambda_n \end{pmatrix}$\\
-Por lo tanto, \textbardbl \textit{f}\textbardbl $_{B}$ = $ \begin{pmatrix} a_{11}&0&\ldots&0\\ 0&a_{22}&\ldots&0\\ \ldots&\ldots&\ddots&\ldots\\ 0&0&\ldots&a_{nn} \end{pmatrix}$ que es una matriz diagonal. \\
+\textit{f}($\vec{v}_{n}$) = A$\cdot\vec{v}_n$ = $\lambda_{n}\cdot\vec{v}_{n}$ $\Rightarrow$ la n columna de \textbardbl \textit{f}\textbardbl $_{B}$ será {  } $ \begin{pmatrix} 0 \\ 0\\ \vdots\\ \lambda_n \end{pmatrix}$\\\\
+Por lo tanto, podemos escribir la matriz de transformación lineal:\\\\
+ \textbardbl \textit{f}\textbardbl $_{B}$ = $ \begin{pmatrix} a_{11}&0&\ldots&0\\ 0&a_{22}&\ldots&0\\ \ldots&\ldots&\ddots&\ldots\\ 0&0&\ldots&a_{nn} \end{pmatrix}$ que es una matriz diagonal. \\
 \newpage
 % ------------- Autovalores y Autovectores ---------------
 \section{Autovalores y Autovectores}
 Dada una matriz A $\in {\rm I\!R}^{nxn}$ llamaremos autovalor de A a un número $\lambda \in {\rm I\!R}$ si existe un vector $\vec{v} \in {\rm I\!R}^n, \vec{v} \neq \vec{0}$ al que llamaremos autovector de A asociado al autovalor $\lambda$ tal que $A\cdot\vec{v} = \lambda\cdot\vec{v}$
 \subsection{Proposiciones}
 % ------------- Proposición EZPZ ---------------
-\subsubsection{C.L. vectores asociados}
+\subsubsection{C.L. de vectores asociados}
 Si $\vec{v}_1, \vec{v}_2, \ldots \vec{v}_n$ son autovectores de una matriz A asociados a un autovalor $\lambda$, entonces cualquier combinación lineal de ellos será autovector de A asociado a $\lambda$. \\
 \textbf{Demostración:} Sabiendo que A$\cdot\vec{v}_i = \lambda\cdot\vec{v}_i$\\ 
 A$\cdot( \alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n )$ $\rightarrow$ Planteo C.L. de los vectores\\ 
@@ -73,8 +74,8 @@ $\lambda \cdot(\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n)
 Por lo tanto A$\cdot( \alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n )$ = $\lambda \cdot(\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \ldots \alpha_n\vec{v}_n)$
 \subsubsection{Relación entre autovalor y determinante}
 $\lambda$ es un autovalor asociado a $\vec{v}$, autovector de una matriz A $\Leftrightarrow$ \textbar  A - $\lambda$I\textbar = 0\\
-{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, $\lambda$ y $\vec{v}$ autovalor y autovector de A tal que $A\cdot\vec{v} = \lambda\cdot\vec{v}$ siendo $\vec{v} \neq \vec{0}$ (¿Por qué?)\\
-{\bfseries \textcolor{red}{Tesis:}} \textbar  A - $\lambda$I\textbar = 0\\
+{\bfseries {Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, $\lambda$ y $\vec{v}$ autovalor y autovector de A tal que $A\cdot\vec{v} = \lambda\cdot\vec{v}$ siendo $\vec{v} \neq \vec{0}$ (¿Por qué?)\\
+{\bfseries {Tesis:}} \textbar  A - $\lambda$I\textbar = 0\\
 \textbf{Demostración:} En $A\cdot\vec{v} = \lambda\cdot\vec{v}$ con  $\vec{v} \neq \vec{0}$, $\vec{v}$ es solución del sistema homogéneo (A - $\lambda$I)$\cdot\vec{x}$ = $\vec{0}$ (¿Por qué?).\\
 Luego este es un sistema compatible indeterminado: por lo tanto el determinante de su matriz es = 0. Es decir, \textbar  A - $\lambda$I\textbar = 0\\
 La otra implicación queda a cargo de ustedes ,
@@ -84,14 +85,13 @@ pues es muy parecida a ésta
 Ejemplos:\\
 a) \textit{f}: ${\rm I\!R}^{2}\rightarrow {\rm I\!R}^{2}$ / \textit{f}($x,y$) = ($x, -y$)\\
 b)\textit{f}: ${\rm I\!R}^{3}\rightarrow {\rm I\!R}^{3}$ / \textit{f}($x,y,z$) = ($x+y, x-y, 0$)\\
-Luego halla los autovalores y autovectores de A y verifica lo que dice el enunciado anterior.\\
-\newpage
+Luego halla los autovalores y autovectores de A y verifica lo que dice el enunciado anterior.
 \subsection{Propiedades de los Autovectores}
 \textbf{1)} S = \{$\vec{x}$ / $\vec{x} = \vec{0}$ o $\vec{x}$ es un autovector asociado al autovalor $\lambda$ \} es un subespacio. (Queda como ejercicio)\\
 % ------------- Autovectores distintos son L.I. ---------------
 \textbf{2)} Los autovectores correspondientes a autovalores distintos son L.I.\\
-{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} autovectores de A . $\lambda_{1}, \lambda_{2},\ldots \lambda_{n}$ sus autovalores asociados tales que $\lambda_i \neq \lambda_j$ $\forall$ $i\neq j$ \\
-{\bfseries \textcolor{red}{Tesis:}} \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} es un conjunto L.I.\\
+{\bfseries {Hipótesis:}} A $\in {\rm I\!R}^{nxn}$, \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} autovectores de A . $\lambda_{1}, \lambda_{2},\ldots \lambda_{n}$ sus autovalores asociados tales que $\lambda_i \neq \lambda_j$ $\forall$ $i\neq j$ \\
+{\bfseries {Tesis:}} \{$\vec{x}_{1}, \vec{x}_2,... \vec{x}_n $\} es un conjunto L.I.\\
 \textbf{Demostración:} La demostración habría que hacerla usando el principio de inducción completa. Nosotros vamos a probar que vale para n=2 y luego usando que vale para n=2 demostraremos que vale para n=3 y así sucesivamente se puede demostrar para cualquier valor de n.\\
 a) Probaremos para $n=2$, es decir que \{$\vec{x}_{1}, \vec{x}_2$\} es un conjunto L.I. \\
 Sea: 
@@ -120,12 +120,11 @@ Multiplicando por A y reemplazando por los autovectores nos queda:
 \begin{align}
 \alpha_{1}\lambda_1\vec{x}_1+\alpha_{2}\lambda_2\vec{x}_2 + \alpha_{3}\lambda_3\vec{x}_3 = \vec{0}
 \end{align}
-Hacemos $\lambda_1\cdot$(3)-(4) y nos queda $\alpha_2(\lambda_1-\lambda_2)\vec{x}_2+\alpha_3(\lambda_1-\lambda_3)\vec{x}_3=\vec{0}$ \\
-Como $\vec{x}_2$ y $\vec{x}_3$ son 2 autovectores asociados a autovalores diferentes son L.I. Luego si tengo una combinación lineal de ellos igualada a $\vec{0}$ sos escalares son igual a 0.\\
+Hacemos $\lambda_1\cdot$(3)-(4) y nos queda: \\$\alpha_2(\lambda_1-\lambda_2)\vec{x}_2+\alpha_3(\lambda_1-\lambda_3)\vec{x}_3=\vec{0}$ \\
+Como $\vec{x}_2$ y $\vec{x}_3$ son 2 autovectores asociados a autovalores diferentes son L.I. Luego si tengo una combinación lineal de ellos igualada a $\vec{0}$ sus escalares son igual a 0.\\
 $\alpha_2(\lambda_1-\lambda2)=0$ ; $\alpha_3(\lambda_1-\lambda_3)=0$ $\rightarrow$ $\alpha_2 = \alpha_3 = 0$ (¿Por qué?)\\
-Reemplazando en (3) nos queda $\alpha_1=0$\\
+Reemplazando en (3) nos queda: $\alpha_1=0$\\
 Entonces hemos probado que \{$\vec{x}_{1}, \vec{x}_2, \vec{x}_3$\} es un conjunto L.I.
-\newpage
 \subsection{Consecuencias}
 \begin{enumerate}
 \item A $\in \rm {I\!R}^{nxn}$ es una matriz diagonalizable $\Leftrightarrow$ \\
@@ -139,8 +138,9 @@ b) Tiene n autovectores L.I.
 \item Las matrices simétricas son siempre diagonalizables \textit{(sin demostración)}
 \item Los autovectores de matrices simétricas correspondientes a autovalores diferentes son ortogonales 
 
-{\bfseries \textcolor{blue}{Hipótesis:}} A $\in {\rm I\!R}^{nxn}$ matriz simétrica, \{$\vec{x}_{1}, \vec{x}_2$\} autovectores de A asociados a $\lambda_{1}, \lambda_{2}$ donde $\lambda_{1} \neq \lambda_{2}$\\
-{\bfseries \textcolor{red}{Tesis:}} $\vec{x}_{1} \perp \vec{x}_2$ es decir $(\vec{x}_1\cdot\vec{x}_2)=0$\\
+% ------------- Simetrica => Autovectores de autovalores dif.---------------
+{\bfseries {Hipótesis:}} A $\in {\rm I\!R}^{nxn}$ matriz simétrica, \{$\vec{x}_{1}, \vec{x}_2$\} autovectores de A asociados a $\lambda_{1}, \lambda_{2}$ donde $\lambda_{1} \neq \lambda_{2}$\\
+{\bfseries {Tesis:}} $\vec{x}_{1} \perp \vec{x}_2$ es decir $(\vec{x}_1\cdot\vec{x}_2)=0$\\
 \textbf{Demostración:} Consideramos el producto interno canónico en el que se cumple que $(\vec{x}\cdot\vec{y}) = \vec{x}^\mathsf{T}\cdot\vec{y}$\\
 Hacemos \\
 $(\vec{x}_1)^\mathsf{T}A\cdot\vec{x}_2=(\vec{x}_1)^\mathsf{T}\lambda_2\vec{x}_2=\lambda_2(\vec{x}_1\cdot\vec{x}_2)$\\
@@ -149,15 +149,16 @@ Podemos igualar ambas igualdades finales dado que parten de la misma expresión:
 $\lambda_2\cdot(\vec{x}_1\cdot\vec{x}_2)=\lambda_1\cdot(\vec{x}_1\cdot\vec{x}_2)$, luego pasamos restando y factor común: \\
 $(\lambda_2-\lambda_1)(\vec{x}_1\cdot\vec{x}_2)=0$ y como $\lambda_1 \neq \lambda_2 \rightarrow (\vec{x}_1\cdot\vec{x}_2)=0$
 % ------------- Simetrica sii base ortogonal ---------------
+\\
 \item A es una matriz simétrica $\leftrightarrow$ tiene una base ortogonal de autovectores\\
-$\rightarrow$){\bfseries \textcolor{blue}{Hipótesis:}} A es simétrica\\
-{\bfseries \textcolor{red}{Tesis:}} $\exists$ una base ortonormal de ${\rm I\!R}^{n}$ formada por autovectores\\
+$\Rightarrow$){\bfseries {Hipótesis:}} A es simétrica\\ 
+{\bfseries {Tesis:}} $\exists$ una base ortonormal de ${\rm I\!R}^{n}$ formada por autovectores\\
 \textbf{Demostración:} Siendo A simétrica consideraremos 2 casos posibles:\\
 a) Tiene n autovalores distintos, los autovectores asociados serían ortogonales (probado anteriormente) y dividiendo cada uno por su norma tendremos una base ortonormal de autovectores \\
 b) Hay algún autovalor múltiple ($\lambda_0$), como sabemos que es diagonalizable, la Dim$(S)_{\lambda_{0}}$ = multiplicidad de $\lambda_0$ $\rightarrow$ dentro de ese subespacio podré encontrar una base ortonormal y junto con los otros formarán una base ortonormal de ${\rm I\!R}^{n}$ formada por autovectores
 
-$\leftarrow$){\bfseries \textcolor{blue}{Hipótesis:}} A tiene una base ortonormal de autovectores\\
-{\bfseries \textcolor{red}{Tesis:}} A es simétrica\\
+$\Leftarrow$){\bfseries {Hipótesis:}} A tiene una base ortonormal de autovectores\\
+{\bfseries {Tesis:}} A es simétrica\\
 \textbf{Demostración:} Como A tiene una base ortogonal de
 autovectores $\rightarrow$\\
 $\exists$ D diagonal tal que $A = P \cdot D \cdot P ^\mathsf{T} $\\
