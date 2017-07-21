@@ -162,5 +162,45 @@ $\vec{x}$ = $\beta_1 \cdot (-\dfrac{\alpha_2}{\alpha_1}\cdot\vec{e}_2 - \cdots -
 Sacando factor común queda expresado\\ $\vec{x}$ = $\vec{e}_2 \cdot (- \dfrac{\alpha_2}{\alpha_1}) + \vec{e}_3 \cdot (- \dfrac{\alpha_3}{\alpha_1}) + \hdots + \vec{e}_n \cdot (-\dfrac{\alpha_n}{\alpha_1})$  \\
 De esta manera, $\vec{e}_2$ queda generado por \{$\vec{e}_2,\hdots,\vec{e}_n\}$, el cual tiene $n-1$ elementos. 
 \subsection{Dado V e.v. dim(V) = n. Si tenemos n vectores L.I. pertenecientes a V, son una base de V}
+{\bfseries {Hipótesis:}} V e.v, dim(V) = n. \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} conjunto L.I. \\
+{\bfseries {Tesis:}} \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} Base de V\\
+{\bfseries Demostración:} Para que un conjunto sea base de V ,debe ser l.i. y SG de V. \\
+Que son L.I. lo sabemos por Hip. Sólo nos falta probar que son S.G. de V\\
+Para eso debemos probar que cualquier $\vec{x}$ perteneciente a V está generado por dichos vectores. \\
+Sea $\vec{x}$ $\in$ V (¿Por qué comienzo así?) y formo el conjunto A = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n, \vec{x} $\} este conjunto es L.D. (¿Por qué?)\\
+Entonces existe una C.L. de sus vectores igualada a cero con sus escalares no todos nulos. \\
+Sea $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n} + \alpha_{n+1}\vec{x} = \vec{0}$; puede ser $\alpha_{n+1} = 0$ o $\alpha_{n+1} \neq 0$\\
+Si $\alpha_{n+1} = 0$ nos queda $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n}= \vec{0}$. 
+\\Y, como los $\vec{e}_i$ son L.I. tendríamos $\alpha_1 = \alpha_2 = \hdots = \alpha_n = 0$. Lo cual es absurdo (¿Por qué?)
+Por lo tanto es $\alpha_{n+1} \neq 0$ y podemos despejar.\\
+Nos queda $\vec{x}$ = $-\vec{e}_1 \cdot (\dfrac{\alpha_1}{\alpha_{n+1}}) - \vec{e}_2 \cdot (\dfrac{\alpha_{2}}{\alpha_{n+1}}) - \hdots - \vec{e}_n \cdot (\dfrac{\alpha_n}{\alpha_{n+1}})$\\
+Por lo que queda demostrado que: \\
+\{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} es una base de V.
+\subsection{Dado V e.v. tal que dim(V) = n. Si tenemos un conjunto de n vectores S.G. de V son una base de V}
+{\bfseries {Hipótesis:}} V e.v, dim(V) = n. \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} S.G. de V \\
+{\bfseries {Tesis:}} \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} Base de V\\
+{\bfseries Demostración:} Debemos demostrar que A = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} es un conjunto L.I. \\
+Supongamos que A no es un conjunto l.i. entonces un subconjunto de él continuará siendo un S.G. de V (¿Por qué?). Llamemos $A_1$ a dicho conjunto.\\
+$A_1$ no puede ser L.I. porque si lo fuera sería una base de V
+de n-1 elementos. Absurdo. (¿Por qué?)\\
+Luego $A_1$ debe ser l.d. Entonces un subconjunto de él continuará siendo un S.G. de V . Llamemos $A_2$ a dicho conjunto.\\
+Y así podemos continuar hasta llegar a tener $A_n$ =\{$\vec{e}_j$\} un subconjunto de A con un solo elemento que es distinto de 0 (¿Por qué?) por lo
+tanto es L.I. o sea que sería una base de V. Absurdo. \\
+Por lo tanto A debe ser L.I. y entonces es base de V 
+\section{Definiciones}
+Dados S y T subespacios de V e.v. podemos definir :
+\begin{itemize}
+\item {\bfseries {Intersección:}} $S \cap T$ = \{$\vec{x} \in V$ / $\vec{x} \in S$ y $\vec{x} \in T$\}
+\item {\bfseries {Unión:}} $S \cup T$ = \{$\vec{x} \in V$ / $\vec{x} \in S$ o $\vec{x} \in T$\}
+\item {\bfseries {Suma:}} $S + T$ = \{$\vec{x} \in V$ / $\vec{x} = \vec{a} + \vec{b}$ con $\vec{a} \in S$ y $\vec{b} \in T$\}
+\item {\bfseries {Suma directa:}} $S \oplus T$ = $S+T$ con $S \cap T$ = \{$\vec{0}$\}
+\end{itemize}
+\subsection{Si S y T son subespacios de V e.v. entonces S+T es un
+subespacio de V.}
+{\bfseries {Hipótesis:}} V e.v. , S y T subespacios de V \\
+{\bfseries {Tesis:}} S +T es un subespacio de V\\
+{\bfseries {Demostración:}} Es evidente que $S + T \subset V$ (¿Por qué)?\\
+Veamos que se cumplen las 3 condiciones para que sea subespacio\\
+{\bfseries {a) Sea $\vec{x} \in S+T$ e $\vec{y} \in S+T$}} entonces\\
 
 \end{document}
