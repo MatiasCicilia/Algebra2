@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+
+% -------------  Header   ---------------
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyheadoffset{2pt}
+\fancyhead[L]{Algebra II}
+\fancyhead[R]{Universidad Austral}
+% -------------  Margenes ---------------
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+% ------------- /Margenes ---------------
+% ------------- Espaciado entre lineas ---------------
+\renewcommand{\baselinestretch}{1.5} 
+% !TeX spellcheck = es_ES
+\title{Transformaciones Lineales}
+\author{Álgebra II}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+% ------------- Comienza el documento ---------------
+{\Large \bfseries{Definiciones:}}
+\begin{enumerate}
+\item Dado V y W dos espacios vectoriales, decimos que una función $f: V \rightarrow W$ es una transformación lineal u homomorfismo si:\\
+{\bfseries{a)}} $f(\vec{v}_1+\vec{v}_2)$ = $f(\vec{v}_1)$ + $f(\vec{v}_2)$\\
+{\bfseries{b)}} $f(\lambda \cdot \vec{v})$ = $\lambda \cdot f(\vec{v})$
+\item Dada $f: V \rightarrow W$ una T.L. definimos:\\
+{\bfseries{a)}} $N_u(f)$ = \{$\vec{x} \in V$ / $f (\vec{x}) = \vec{0}_w\}$ \\
+{\bfseries{b)}} $Im(f)$ = \{$\vec{y} \in W$ / $\exists$ $\vec{x} \in V$ / $f(\vec{x}) = \vec{y}\}$\\
+{\bfseries{c)}} Dado S subespacio de V,\\
+$f(S)$ = \{$\vec{y} \in W$ / $\exists$ $\vec{x} \in S$ / $f(\vec{x}) = \vec{y}\}$\\
+{\bfseries{d)}} Dado T subespacio de W,\\
+$f^{-1}(T)$ = $\{\vec{x} \in V$ / $f(\vec{x}) \in W\}$
+\end{enumerate}
+%------------------------------------------------
+%---------------- Sección 3 ---------------------
+%------------------------------------------------
+{\Large \bfseries{3) Dado V y W e.v.s. y $f: V \rightarrow W$ / $f$ es T.L. entonces $f(\vec{0}_v) = \vec{0}_w$}}
+
+\vspace{2mm} \noindent
+{\bfseries Hipótesis:} V y W espacios vectoriales, $f: V \rightarrow W$ / $f$ es T.L. \\
+{\bfseries Tesis:} $f(\vec{0}_v)$ = $f(\vec{0}_w)$ \\
+{\bfseries Demostración:} \\
+$\vec{0}_v$ = $0 \cdot \vec{0}_v$ $\Rightarrow$\\
+$f(\vec{0}_v)$ = $f(0\cdot \vec{0}_v)$ = $0 \cdot f(\vec{0}_v)$ (¿Por qué?) \\
+Pero $f(\vec{0}_v)$ $\in$ W $\Rightarrow$ $0 \cdot f(\vec{0}_v)$ = $\vec{0}_w$
+
+%------------------------------------------------
+%---------------- Sección 4 ---------------------
+%------------------------------------------------
+\vspace{2mm} \noindent
+{\Large \bfseries{4) Dado V, W e.v. y $f: V \rightarrow W$ entonces $Im(f)$ es subespacio de W}}
+
+\vspace{2mm} \noindent
+{\bfseries Hipótesis:} V y W espacios vectoriales, $f: V \rightarrow W$ / $f$ es T.L. \\
+{\bfseries Tesis:} $Im(f)$ es un subespacio de W \\
+{\bfseries Demostración:} Debemos probar las 3 condiciones para que sea
+subespacio .\\
+{\bfseries{a)}} Sean $\vec{x}$ e $\vec{y}$ $\in$ $Im(f)$, \\
+Entonces existen $\vec{a}$ y $\vec{b}$ $\in$ V / $f(\vec{a}) = \vec{x}$ y $f(\vec{b})$ = $\vec{y}$ \\
+Luego $f(\vec{a} + \vec{b})$ = $f(\vec{a}) + f(\vec{b})$ (¿Por qué?) = $\vec{x} + \vec{y}$\\
+Como $\vec{a} + \vec{b}$ $\in$ V (¿Por qué?) entonces $\vec{x} + \vec{y}$ $\in $ $Im(f)$\\
+{\bfseries{b)}} Sea $\vec{x} \in Im(f)$, entonces $\exists$ $\vec{a} \in V$ / $f(\vec{a}) = \vec{x}$ \\
+Ahora $\alpha \cdot \vec{x}$ = $\alpha \cdot f(\vec{a})$ = $f(\alpha \cdot \vec{a})$ (¿Por qué?)\\
+Y como $\alpha \cdot \vec{a}$ $\in$ V (¿Por qué?) $\Rightarrow$ $\alpha \cdot \vec{x} \in Im(f)$ \\
+{\bfseries{c)}} Como $f(\vec{0}_v)$ = $\vec{0}_w$ $\Rightarrow$ $\vec{0}_w \in$ W
+%------------------------------------------------
+%---------------- Sección 5 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{5) Si $f: V \rightarrow W$ es una T.L. entonces transforma una base de V en un S.G. de $Im(f)$}}
+
+\vspace{2mm} \noindent
+{\bfseries Hipótesis:} $f: V \rightarrow W$ / $f$ es T.L. , $\{\vec{e}_1, \vec{e}_2, \hdots  \vec{e}_n\}$ base de V \\
+{\bfseries Tesis:} $\{f(\vec{e}_1), f(\vec{e}_2), \hdots  f(\vec{e}_n)\}$ es S.G. de $Im(f)$ \\
+{\bfseries Demostración:} Sea $\vec{x} \in Im(f)$ $\Rightarrow$ $\exists \vec{a} \in V$ / $f(\vec{a}) = \vec{x}$ \\
+Como $\vec{a} \in V$ está generado por los elementos de una base de V, se lo puede escribir como: \\
+$\vec{a} = \alpha_1\vec{e}_1 + \alpha_2\vec{e}_2 + \hdots + \alpha_n\vec{e}_n$
+\\Entonces también: \\
+$f(\vec{a})$ = $f(\alpha_1\vec{e}_1 + \alpha_2\vec{e}_2 + \hdots + \alpha_n\vec{e}_n)$\\
+Como $f$ es T.L. entonces aplico las dos propiedades y nos queda: \\
+$\vec{x}$ = $f(\vec{a})$ = $\alpha_1f(\vec{e}_1) + \alpha_2f(\vec{e}_2) + \hdots + \alpha_nf(\vec{e}_n)$ \\
+Entonces $\vec{x}$ está generado por $\{f(\vec{e}_1), f(\vec{e}_2), \hdots  f(\vec{e}_n)\}$
+%------------------------------------------------
+%---------------- Sección 6 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{6) Clasificación}}
+
+\vspace{2mm} \noindent
+Si $f:V \rightarrow W$ es una T.L. , entonces
+\begin{itemize}
+\item $f$ es un monomorfismo $\Leftrightarrow$ $f$ es inyectiva
+\item $f$ es un epimorfismo $\Leftrightarrow$ $f$ es suryectiva
+\item $f$ es un isomorfismo $\Leftrightarrow$ $f$ es biyectiva
+\end{itemize}
+%------------------------------------------------
+%---------------- Sección 7 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{7) $f$ es monomorfismo $\Leftrightarrow$ $Nu_(f)$ = $\{\vec{0}\}$}}
+
+\vspace{2mm} \noindent
+$\Longrightarrow$ \\
+{\bfseries Hipótesis:} V y W e.v.s. y $f: V \rightarrow W$ / $f$ es T.L. \\ $f$ es monomorfismo, o sea si $f(\vec{x}_1)$ = $f(\vec{x}_2)$ $\Rightarrow$ $\vec{x}_1$ = $\vec{x}_2$ \\
+{\bfseries Tesis:} $N_u(f)$ = $\{\vec{0}_v\}$ \\
+{\bfseries Demostración:} $\vec{0}_v \in N_u(f)$ porque $f(\vec{0}_v)$ = $\vec{0}_w$. \\
+Tomemos un $\vec{x} \in N_u(f)$, entonces $f(\vec{x})$ = $\vec{0}_w$. \\
+Luego, por ser monomorfismo, $\vec{x}$ = $\vec{0}$. O sea $N_u(f)$ = $\{\vec{0}_v\}$ \\
+$\Longleftarrow$ \\
+{\bfseries Hipótesis:} V y W e.v.s. y $f: V \rightarrow W$ / $f$ es T.L. y $N_u(f)$ = $\{\vec{0}_v\}$  \\
+{\bfseries Tesis:}  $f$ es monomorfismo, o sea si $f(\vec{x}_1)$ = $f(\vec{x}_2)$ $\Rightarrow$ $\vec{x}_1$ = $\vec{x}_2$\\
+{\bfseries Demostración:} Sean $\vec{x}_1$ y $\vec{x}_2$ $\in$ V / $f(\vec{x}_1)$ = $f(\vec{x}_2)$\\
+Entonces 
+$f(\vec{x}_1)$ - $f(\vec{x}_2) = \vec{0}_w$  \\
+$\Rightarrow$ $f(\vec{x}_1 - \vec{x}_2)$ = $\vec{0}_w$ (¿Por qué?) \\
+$\Rightarrow$ $\vec{x}_1 - \vec{x}_2$ $\in$ $N_u(f)$, pero como $N_u(f)$ = $\{\vec{0}_v\}$  resulta: \\
+$\vec{x}_1 - \vec{x}_2$ = $\vec{0}_v$ $\Rightarrow$ $\vec{x}_1$ = $\vec{x}_2$
+%------------------------------------------------
+%---------------- Sección 8 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{8) Si $f$ es un monomorfismo, entonces transforma una base del dominio en una base de $Im(f)$}}
+
+\vspace{2mm} \noindent
+{\bfseries Hipótesis:} $f: V \rightarrow W$ / $f$ es monomorfismo (O sea es T.L. y $N_u(f)$ = $\{\vec{0}_v\}$) \\
+$\{\vec{e}_1, \vec{e}_2, \hdots  \vec{e}_n\}$ base de V \\
+{\bfseries Tesis:} A= $\{f(\vec{e}_1), f(\vec{e}_2), \hdots  f(\vec{e}_n)\}$ es base de $Im(f)$ \\
+{\bfseries Demostración:} Debemos probar que A es un conjunto L.I. y S.G. de $Im(f)$ \\
+Que es S.G. de $Im(f)$ ya lo sabemos (¿Por qué?). Vamos a probar que A es un conjunto L.I. \\
+Sea $\beta_1 f(\vec{e}_1) + \beta_2 f(\vec{e}_2) + \hdots + \beta_n f(\vec{e}_n)$ = $\vec{0}_w$ $\Rightarrow$ \\
+$f(\beta_1 \vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_n \vec{e}_n)$ = $\vec{0}_w$ \\
+Entonces $\beta_1 \vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_n \vec{e}_n$ $\in$ $N_u(f)$. Pero $N_u(f)$ = $\{\vec{0}_v\}$ \\
+Por lo tanto $\beta_1 \vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_n \vec{e}_n$ = $\vec{0}_v$ \\
+Y como $\{\vec{e}_1, \vec{e}_2, \hdots  \vec{e}_n\}$ es un conjunto L.I. $\Rightarrow$\\
+$\beta_1$ = $\beta_2$ = $\hdots$ = $\beta_n$ = 0\\
+Luego A es un conjunto L.I. y por lo tanto base de W.
+\end{document}
