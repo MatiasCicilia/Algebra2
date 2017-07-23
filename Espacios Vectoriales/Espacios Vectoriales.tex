@@ -53,7 +53,6 @@ Estas operaciones cumplen las siguientes propiedades:\\
 \item {\bfseries Distributiva:} $k  \cdot (\vec{x} + \vec{y}) = k \cdot \vec{x} + k \cdot \vec{y} $
 \item {\bfseries Distributiva:} $(k_{1} + k_{2})\cdot \vec{x} = k_{1}\cdot\vec{x} + k_{2}\cdot\vec{x}$
 \end{enumerate}
-\newpage
 % ------------- Subespacios ---------------
 \section{Subespacios} 
 {\bfseries Definición:} Un subconjunto S no vacío de V e.v.es un subespacio de V si la suma y el producto definidas en  V estructuran también a S como un espacio vectorial. \\
@@ -202,5 +201,48 @@ subespacio de V.}
 {\bfseries {Demostración:}} Es evidente que $S + T \subset V$ (¿Por qué)?\\
 Veamos que se cumplen las 3 condiciones para que sea subespacio\\
 {\bfseries {a) Sea $\vec{x} \in S+T$ e $\vec{y} \in S+T$}} entonces\\
-
+$\vec{x} = \vec{a} + \vec{b}$ con $\vec{a} \in S$, $\vec{b} \in T$\\
+$\vec{y} = \vec{c} + \vec{d}$ con $\vec{c} \in S$, $\vec{d} \in T$\\
+Entonces $\vec{x} + \vec{y}$ = $\vec{a}+\vec{b}+\vec{c}+\vec{d}$ = $(\vec{a} + \vec{c}) $ + $(\vec{b} + \vec{d})$\\
+Pero $\vec{a}+\vec{c} \in S$ y $\vec{b}+\vec{d} \in T$ (¿Por qué?) $\Rightarrow$ $\vec{x} + \vec{y} $ $\in$ $ S + T $ \\
+{\bfseries {b) Sea $\vec{x} \in S+T$}}, entonces $\vec{x} = \vec{a} + \vec{b} $ con $ \vec{a} \in S$ y $\vec{b} \in T$\\
+$\alpha\vec{x} = \alpha\cdot (\vec{a} + \vec{b}) = \alpha\vec{a} + \alpha\vec{b}$ (¿Por qué?)\\
+Pero $\alpha\vec{a} \in S$ y $\alpha\vec{b} \in T$ $\Rightarrow$ $\alpha\vec{x} \in S+T$\\
+{\bfseries {c)}} $\vec{0}_v \in S, \vec{0}_v \in T$ y como $\vec{0}_v + \vec{0}_v = \vec{0}_v$ $\Rightarrow$ $\vec{0}_v \in S+T$\\
+Entonces queda probado que S+T es subespacio de V
+\subsection{Teorema de la dimension de suma de subespacios}
+Si S y T son subespacios de V e.v. ,entonces\\
+dim($S+T$) = dim($S$) + dim($T$) - dim($S \cap T$)\\
+{\bfseries {Hipótesis:}} V e.v. S y T subespacios de V  \\
+{\bfseries {Tesis:}} dim($S+T$) = dim($S$) + dim($T$) - dim($S \cap T$)\\
+{\bfseries {Demostración:}} Sea $\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r\}$ una base de $S \cap T$\\
+Completamos a una base de S y a una base de T y nos queda: \\
+$\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r, \vec{x}_1, \vec{x}_2, \hdots, \vec{x}_p\}$ base de S \\
+$\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r, \vec{y}_1, \vec{y}_2, \hdots, \vec{y}_d\}$ base de T \\
+Con estos vectores formemos un conjunto que pueda ser base de S+T\\
+Por de pronto no deberá tener vectores repetidos (¿Por qué?)\\
+Entonces tomamos A = $\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r, \vec{x}_1, \vec{x}_2, \hdots, \vec{x}_p, \vec{y}_1, \vec{y}_2, \hdots, \vec{y}_d\}$\\
+Vamos a demostrar que A esun conjunto l.i. y S.G. de S+T\\
+Primero veamos que son L.I.\\
+Hacemos una C.L. igualada a $\vec{0}$, o sea: \\
+$\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots, \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots \beta_p\vec{x}_p + \gamma_1\vec{y}_1 + \gamma_2\vec{y}_2 + \hdots + \gamma_d\vec{y}_d = \vec{0}$\\
+Lo que es lo mismo que: \\
+\begin{align}
+\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots, \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots \beta_p\vec{x}_p  = - \gamma_1\vec{y}_1 - \gamma_2\vec{y}_2 - \hdots - \gamma_d\vec{y}_d
+\end{align}
+Llamaremos $\vec{h}$ a estos vectores que son iguales. Pero $\vec{h} \in S$ y $\vec{h} \in T$ entonces $\vec{h} \in S \cap T$, o sea estará generado por la base de $S \cap T$. \\
+Entonces nos queda: \\
+$- \gamma_1\vec{y}_1 - \gamma_2\vec{y}_2 - \hdots - \gamma_d\vec{y}_d = \theta \vec{v}_1 + \theta\vec{v}_2 + \hdots + \theta\vec{v}_r $\\
+Si pasamos todo para un mismo miembro:\\
+$ \theta \vec{v}_1 + \theta\vec{v}_2 + \hdots + \theta\vec{v}_r + \gamma_1\vec{y}_1 + \gamma_2\vec{y}_2 + \hdots + \gamma_d\vec{y}_d = \vec{0}$\\
+Como se trata de una C.L. de vectores L.I. (¿Por qué?) igualada a $\vec{0}$ sus escalares serán todos = 0.\\
+O sea será $\vec{h} = \vec{0}$ y $\gamma_1 = \gamma_2 = \hdots = \gamma_d = 0$\\Reemplazando en (1) nos queda:  \\
+$\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots, \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots \beta_p\vec{x}_p  = \vec{0}$\\
+Como se trata de vectores L.I. (¿Por qué?) sus escalares son = 0. De esta manera todos los $\alpha_i$ y $\beta_i$ son cero, por lo que queda demostrado que A es un conjunto L.I.\\
+Ahora veamos que A es un S.G. de S+T. \\
+Sea $\vec{x} \in S+T$ (¿Por qué comienzo así?) $\Rightarrow$ $\vec{x} = \vec{a} + \vec{b}$ con $\vec{a} \in S$ y $\vec{b} \in T$. \\
+Pero como tenemos las bases de S y T podemos escribir: \\
+$\vec{x} = \alpha_1 \vec{v}_1 + \hdots + \alpha_r \vec{v}_r + \beta_1\vec{x}_1 + \hdots + \beta_p \vec{x}_p + \lambda_1\vec{v}_1 + \hdots + \lambda_r\vec{v}_r + \gamma\vec{x}_1 + \hdots + \gamma_d \vec{y}_d $\\
+$\vec{x} = (\alpha_1 + \lambda_1) \vec{v}_1 + \hdots + (\alpha_r + \lambda_r) \vec{v}_r + \beta_1\vec{x}_1 + \hdots + \beta_p \vec{x}_p + \lambda_1\vec{x}_1 + \hdots + \lambda_r\vec{x}_r$\\
+Con lo que queda comprobado que A es un S.G.
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  21 JUL 2017 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  21 JUL 2017 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,47 +466,24 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
- [1
 
-{e:/Developer/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! I can't write on file `"Espacios Vectoriales.pdf"'.
+(Press Enter to retry, or Control-Z to exit; default file extension is `.pdf')
+Please type another file name for output
+! Emergency stop.
+<to be read again> 
+                   \endgroup \set@typeset@protect 
+l.61 \item S
+            i $\vec{x} \in S$ e $\vec{y} \in S \Rightarrow \vec{x} + \vec{y}...
+*** (job aborted, file error in nonstop mode)
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2] [3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
-
- []
-
-[7] [8] (./Espacios Vectoriales.aux) ) 
+ 
 Here is how much of TeX's memory you used:
- 2058 strings out of 494945
- 24478 string characters out of 6180553
- 88678 words of memory out of 5000000
- 5364 multiletter control sequences out of 15000+600000
- 9709 words of font info for 35 fonts, out of 8000000 for 9000
+ 2048 strings out of 494945
+ 24322 string characters out of 6180553
+ 83678 words of memory out of 5000000
+ 5358 multiletter control sequences out of 15000+600000
+ 9402 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,11n,43p,390b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/Developer/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><e:/Developer/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb><e:/Developer/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Developer/texlive/2016/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Espacios Vectoriales.pdf" (8 pages, 156567 bytes).
-PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 27i,7n,43p,238b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
