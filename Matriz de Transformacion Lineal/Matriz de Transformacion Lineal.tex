@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+
+% -------------  Header   ---------------
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyheadoffset{2pt}
+\fancyhead[L]{Algebra II}
+\fancyhead[R]{Universidad Austral}
+% -------------  Margenes ---------------
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+% ------------- /Margenes ---------------
+% ------------- Espaciado entre lineas ---------------
+\renewcommand{\baselinestretch}{1.5} 
+% !TeX spellcheck = es_ES
+\title{Matriz de Transformación Lineal}
+\author{Álgebra II}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+% ------------- Comienza el documento ---------------
+\section{Matriz de una Transformación Lineal dada una
+base de dominio y una base del codominio}
+Dada $f : V \rightarrow W$ una T.L. \\
+B = $\{\vec{v}_1 , \vec{v}_2, \hdots, \vec{v}_n\}$ una base de V \\
+B' = $\{\vec{w}_1, \vec{w}_2, \hdots, \vec{w}_p\}$ una base de W\\
+$\Rightarrow$ existe una matriz $A \in {\rm I\!R}^{pxn}$  / para todo $\vec{x} \in V$, $f(\vec{x})]_{B'}$ = $A \cdot \vec{x}]_B$
+
+\noindent
+Sea $\vec{x} \in V$ $\Rightarrow$ $\vec{x}$ = $\alpha_1 \vec{v}_1 + \alpha_2 \vec{v}_2 + \hdots + \alpha_n \vec{v}_n$ \\
+$\Rightarrow$ $f(\vec{x})$ = $f(\alpha_1 \vec{v}_1 + \alpha_2 \vec{v}_2 + \hdots + \alpha_n \vec{v}_n)$ \\
+$\Rightarrow$ $f(\vec{x})$ = $\alpha_1 f(\vec{v}_1) + \alpha_2 f(\vec{v}_2) + \hdots + \alpha_n f(\vec{v}_n)$ (¿Por qué?)\\
+Pero, \\
+$f(\vec{v}_1)$ = $\beta_{11} \vec{w}_1 + \hdots + \beta_{1p} \vec{w}_p$\\
+$f(\vec{v}_2)$ = $\beta_{21} \vec{w}_1 + \hdots + \beta_{2p} \vec{w}_p$\\
+$\vdots$ \\
+$f(\vec{v}_n)$ = $\beta_{n1} \vec{w}_1 + \hdots + \beta_{np} \vec{w}_p$ \\
+Reemplazando en $f(\vec{x})$ = $\alpha_1 f(\vec{v}_1) + \alpha_2 f(\vec{v}_2) + \hdots + \alpha_n f(\vec{v}_n)$ nos queda: \\
+$f(\vec{x})$ = 
+$\alpha_1 (\beta_{11} \vec{w}_1 + \hdots + \beta_{1p} \vec{w}_p) 
++ \alpha_2 (\beta_{21} \vec{w}_1 + \hdots + \beta_{2p} \vec{w}_p) 
++ \hdots 
++ \alpha_n (\beta_{n1} \vec{w}_1 + \hdots + \beta_{np} \vec{w}_p)$ \\
+Aplicando propiedad distributiva y sacando factor común nos queda: \\
+$f(\vec{x})$ =
+$(\alpha_1 \beta_{11} + \alpha_2 \beta_{21} + \hdots + \alpha_n \beta_{n1}) \vec{w}_1$ + $\hdots$ +  $(\alpha_1 \beta_{1p} + \alpha_2 \beta_{2p} + \hdots + \alpha_n \beta_{np}) \vec{w}_p$. \\
+$f(\vec{x})]_{B'}$ = $(\alpha_1 \beta_{11} + \alpha_2 \beta_{21} + \hdots + \alpha_n \beta_{n1}$ , $\alpha_1 \beta_{12} + \alpha_2 \beta_{22} + \hdots + \alpha_n \beta_{n2}$ , $\hdots , \alpha_1 \beta_{1p} + \alpha_2 \beta_{2p} + \hdots + \alpha_n \beta_{np})$ \\
+Esto se puede escribir matricialmente: \\
+
+\noindent
+$f(\vec{x})]_{B'}$ = 
+$\begin{pmatrix} 
+\beta_{11} & \beta_{21} & \ldots & \beta_{n1} \\
+\beta_{12} & \beta_{22} & \ldots & \beta_{n2}\\
+\ldots & \ldots & \ddots & \ldots \\
+\beta_{1p} & \beta_{2p} & \ldots & \beta_{np}
+\end{pmatrix}$
+%Multiplicado por un vector
+$\begin{pmatrix} 
+\alpha_{1}\\
+\alpha_{2}\\
+\vdots\\
+\alpha_{n}
+\end{pmatrix}$ = A $\Rightarrow$ $f(\vec{x})]_{B'}$ = $A \cdot \vec{x}]_B$
+
+\noindent \\
+Es importante mirar bien como está formada A. ¿Cuáles son sus columnas? 
+
+\noindent
+\section{Matriz de la composición de 2 T.L.}
+Si $f_1 : U \rightarrow V$ y $f_2 : V \rightarrow W$ son 2 T.L. y si B, B' y B'' son bases de U, V y W respectivamente, entonces: \\
+\textbardbl $f_2 \circ f_1$\textbardbl$_{BB''}$ = 
+\textbardbl $f_2$\textbardbl$_{B'B''}$ $\cdot$
+\textbardbl $f_1$\textbardbl$_{BB'}$ \\
+{\bfseries {Hipótesis:}} \\
+$f_1 : U \rightarrow V$ y $f_2 : V \rightarrow W$ son 2 T.L. \\
+B, B' y B'' son bases de U, V y W respectivamente \\
+\textbardbl $f_2$\textbardbl$_{B'B''}$ y
+\textbardbl $f_1$\textbardbl$_{BB'}$ matrices de las T.L. respecto de las bases dadas. \\
+{\bfseries {Tesis:}} \\
+\textbardbl $f_2 \circ f_1$\textbardbl$_{BB''}$ = 
+\textbardbl $f_2$\textbardbl$_{B'B''}$ $\cdot$
+\textbardbl $f_1$\textbardbl$_{BB'}$ \\
+{\bfseries {Demostración:}} \\
+Dado $\vec{x} \in U$ queremos encontrar una matriz A / $f_2 \circ f_1 (\vec{x})]_B''$ = $A \cdot \vec{x}]_B'$ \\
+Sabemos que \textbardbl $f_1$\textbardbl$_{BB'}$ $\cdot$ $\vec{x}]_B$ = $f_1(\vec{x})]_{B'}$ . \\
+Como son las coordenadas de un vector de V en la base B' puedo hacer el siguiente producto: \\
+\textbardbl $f_2$\textbardbl$_{B'B''}$ $\cdot$ $f_1(\vec{x})]_{B'}$ 
+= $f_2($ $f_1(\vec{x})$ $)]_{B'}$ o sea\\
+$f_2 \circ f_1 (\vec{x})]_{B''}$ =
+$f_2($ $f_1(\vec{x})$ $)]_{B'}$ =
+\textbardbl $f_2$\textbardbl$_{B'B''}$ $\cdot$
+\textbardbl $f_1$\textbardbl$_{BB'}$ $\cdot$ $\vec{x}]_{B}$ \\
+$\Rightarrow$ \textbardbl $f_2 \circ f_1$\textbardbl$_{BB''}$ = 
+\textbardbl $f_2$\textbardbl$_{B'B''}$ $\cdot$
+\textbardbl $f_1$\textbardbl$_{BB'}$
+%Sección Definiciones
+\section{Definiciones}
+\subsection{Transformación Lineal Identidad:}
+Sea V e.v. definimos $id: V \rightarrow V$ / $id(\vec{x})$ = $\vec{x}$ , $\forall \vec{x} \in V$
+\subsection{Definición de transformación inversa}
+Dada $f : V \rightarrow W$ / $f$ es un isomorfismo,\\
+Diremos que existe una transformación lineal que llamamos $f^{-1}$ / $f^{-1} : W \rightarrow V$ y se cumple que:
+$f^{-1} \circ f (\vec{x})$ = $id(\vec{x})$ , $\forall \vec{x} \in V$ \\
+$f \circ f^{-1} (\vec{y})$ = $id(\vec{y})$ , $\forall \vec{y} \in W$ \\
+\end{document}
