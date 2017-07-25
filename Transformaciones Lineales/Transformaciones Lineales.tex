@@ -31,21 +31,36 @@
 \maketitle{}
 % ------------- Comienza el documento ---------------
 {\Large \bfseries{Definiciones:}}
-\begin{enumerate}
-\item Dado V y W dos espacios vectoriales, decimos que una función $f: V \rightarrow W$ es una transformación lineal u homomorfismo si:\\
+%------------------------------------------------
+%---------------- Sección 1 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\large \bfseries{1) Dado V y W dos espacios vectoriales, decimos que una función $f: V \rightarrow W$ es una transformación lineal u homomorfismo si:}}
+
+\vspace{2mm} \noindent
 {\bfseries{a)}} $f(\vec{v}_1+\vec{v}_2)$ = $f(\vec{v}_1)$ + $f(\vec{v}_2)$\\
 {\bfseries{b)}} $f(\lambda \cdot \vec{v})$ = $\lambda \cdot f(\vec{v})$
-\item Dada $f: V \rightarrow W$ una T.L. definimos:\\
+
+%------------------------------------------------
+%---------------- Sección 2 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\large \bfseries{2) Dada $f: V \rightarrow W$ una T.L. definimos:}}
+
+\vspace{2mm} \noindent
 {\bfseries{a)}} $N_u(f)$ = \{$\vec{x} \in V$ / $f (\vec{x}) = \vec{0}_w\}$ \\
 {\bfseries{b)}} $Im(f)$ = \{$\vec{y} \in W$ / $\exists$ $\vec{x} \in V$ / $f(\vec{x}) = \vec{y}\}$\\
 {\bfseries{c)}} Dado S subespacio de V,\\
 $f(S)$ = \{$\vec{y} \in W$ / $\exists$ $\vec{x} \in S$ / $f(\vec{x}) = \vec{y}\}$\\
 {\bfseries{d)}} Dado T subespacio de W,\\
 $f^{-1}(T)$ = $\{\vec{x} \in V$ / $f(\vec{x}) \in W\}$
-\end{enumerate}
 %------------------------------------------------
 %---------------- Sección 3 ---------------------
 %------------------------------------------------
+
+\vspace{2mm} \noindent
 {\Large \bfseries{3) Dado V y W e.v.s. y $f: V \rightarrow W$ / $f$ es T.L. entonces $f(\vec{0}_v) = \vec{0}_w$}}
 
 \vspace{2mm} \noindent
@@ -59,6 +74,7 @@ Pero $f(\vec{0}_v)$ $\in$ W $\Rightarrow$ $0 \cdot f(\vec{0}_v)$ = $\vec{0}_w$
 %------------------------------------------------
 %---------------- Sección 4 ---------------------
 %------------------------------------------------
+
 \vspace{2mm} \noindent
 {\Large \bfseries{4) Dado V, W e.v. y $f: V \rightarrow W$ entonces $Im(f)$ es subespacio de W}}
 
@@ -150,4 +166,90 @@ Por lo tanto $\beta_1 \vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_n \vec{e}_n
 Y como $\{\vec{e}_1, \vec{e}_2, \hdots  \vec{e}_n\}$ es un conjunto L.I. $\Rightarrow$\\
 $\beta_1$ = $\beta_2$ = $\hdots$ = $\beta_n$ = 0\\
 Luego A es un conjunto L.I. y por lo tanto base de W.
+%------------------------------------------------
+%---------------- Sección 9 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{9) Teorema de la dimensión de las Transformaciones Lineales}}
+
+\vspace{2mm} \noindent
+Si $f: V \rightarrow W$ es una T.L. entonces $dim(N_u(f))$ + $dim(Im(f))$ = $dim(V)$\\
+{\bfseries Hipótesis:} $f: V \rightarrow W$ es una T.L. \\
+{\bfseries Tesis:} $dim(N_u(f))$ + $dim(Im(f))$ = $dim(V)$ \\
+{\bfseries Demostración:} Sea B = $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_r\}$ una base de $N_u(f)$ \\
+Extendemos B a una base de V, o sea: \\
+B' = $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_r, \vec{f}_1, \vec{f}_2, \hdots, \vec{f}_p\}$ base de V \\
+Consideremos el conjunto C igual a los transformados de los elementos de B':\\
+C = $\{\vec{0}, \vec{0}, \hdots, \vec{0}, f(\vec{f}_1), f(\vec{f}_2), \hdots, f(\vec{f}_p)\}$\\
+C es un S.G. de la imagen (¿Por qué?)\\
+Tomamos C' = $\{f(\vec{f}_1), f(\vec{f}_2), \hdots, f(\vec{f}_p)\}$. C' sigue siendo un S.G. de $Im(f)$ porque el $\vec{0}$ no genera nada. \\
+Probemos ahora que C' es un conjunto L.I.\\
+Sea $\alpha_1 f(\vec{f}_1) + \alpha_2 f(\vec{f}_2) + \hdots + \alpha_p f(\vec{f}_p)$ = $\vec{0}$, entonces: \\
+$f(\alpha_1 \vec{f}_1 + \alpha_2 \vec{f}_2 + \hdots + \alpha_p \vec{f}_p)$ = $\vec{0}$ \\
+O sea $\alpha_1 \vec{f}_1 + \alpha_2 \vec{f}_2 + \hdots + \alpha_p \vec{f}_p$ $\in$ $N_u(f)$, entonces lo puedo escribir como C.L. de la base de $N_u(f)$: \\
+$\alpha_1 \vec{f}_1 + \alpha_2 \vec{f}_2 + \hdots + \alpha_p \vec{f}_p$ = $\beta_1 \vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_r \vec{e}_r$ \\
+Si paso restando me queda: \\
+$\alpha_1 \vec{f}_1 + \alpha_2 \vec{f}_2 + \hdots + \alpha_p \vec{f}_p - \beta_1 \vec{e}_1 - \beta_2 \vec{e}_2 - \hdots + \beta_r \vec{e}_r $ = $\vec{0}$ \\
+Pero esto es una C.L. igualada a $\vec{0}$ de vectores L.I. (¿Por qué?) \\
+Por lo tanto $\alpha_i$ = 0 y $\beta_i$ = 0. $\Rightarrow$ C' es L.I. \\
+O sea C' es una base de $Im(f)$. 
+$\Rightarrow$ $dim(V)$ = $r+p$, $dim(Nu_f)$ = r, $dim(Im(f))$ = p.\\
+Con lo que queda demostrada la tesis.
+%------------------------------------------------
+%---------------- Sección 10 ---------------------
+%------------------------------------------------
+
+\vspace{2mm} \noindent
+{\Large \bfseries{10) Teorema fundamental de las transformaciones lineales}}
+
+\vspace{2mm} \noindent
+Sean V y W e.v.s., B = $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ base de V y $\{\vec{w}_1, \vec{w}_2, \hdots, \vec{w}_p\}$ elementos cualesquiera de W, entonces {\bfseries existe} una {\bfseries única} T.L. $f: V \rightarrow W$ / $f(\vec{v}_i)$ = $\vec{w}_i$ para todo i. \\
+{\bfseries a) Existencia:} \\
+{\bfseries Hipótesis:} V y W e.v.s., B = $\{\vec{e}_1, \vec{e}_2, \hdots, \vec{e}_n\}$ base de V y $\{\vec{w}_1, \vec{w}_2, \hdots, \vec{w}_p\}$ elementos de W \\
+{\bfseries Tesis:} {\bfseries existe} T.L. $f: V \rightarrow W$ / $f(\vec{v}_i)$ = $\vec{w}_i$ para todo i. \\
+{\bfseries Demostración:} Vamos a definir una función $f: V \rightarrow W$. O sea para cada $\vec{x} \in V$ debemos hacerle corresponder un único elemento de W. \\
+Sea $\vec{x} \in V$, entonces existen $(\alpha_1, \alpha_2, \hdots \alpha_p)$ únicos tal que: \
+$\vec{x}$ = $\alpha_1 \vec{e}_1 + \alpha_2 \vec{e}_2 + \hdots + \alpha_p \vec{e}_p$ (¿Por qué?)\\
+Defino $f(\vec{x})$ = $\alpha_1 \vec{w}_1 + \alpha_2 \vec{w}_2 + \hdots + \alpha_p \vec{w}_p$ (¿Está bien definida?) \\
+Debemos ahora probar que está función así definida es una T.L. \\
+{\bfseries i)} $f(\vec{x} + \vec{y})$ = $f(\vec{x})$ + $f(\vec{y})$ para todo $\vec{x}$ e $\vec{y}$ $\in$ V \\
+Sea $\vec{x} \in V$ $\Rightarrow$ $\vec{x}$ = $\delta_1\vec{e}_1 + \delta_2 \vec{e}_2 + \hdots + \delta_p \vec{e}_p$ \\
+Entonces $f(\vec{x})$ = $\delta_1\vec{w}_1 + \delta_2 \vec{w}_2 + \hdots + \delta_p \vec{w}_p$ (¿Por qué?) \\
+Sea $\vec{y} \in V$ $\Rightarrow$ $\vec{y}$ = $\mu_1\vec{e}_1 + \mu_2 \vec{e}_2 + \hdots + \mu_p \vec{e}_p$ \\
+Entonces $f(\vec{y})$ = $\mu_1\vec{ew}_1 + \mu_2 \vec{w}_2 + \hdots + \mu_p \vec{w}_p$ \\
+Por lo tanto $\vec{x}$ + $\vec{y}$ = $\delta_1\vec{e}_1 + \delta_2 \vec{e}_2 + \hdots + \delta_p \vec{e}_p$ + $\mu_1\vec{e}_1 + \mu_2 \vec{e}_2 + \hdots + \mu_p \vec{e}_p$ = \\
+= $(\delta_1 + \mu_1)\vec{e}_1 + (\delta_2 + \mu_2) \vec{e}_2 + \hdots + (\delta_p + \mu_p) \vec{e}_p$\\
+Escribimos entonces $f(\vec{x} + \vec{y})$ y $f(\vec{x})$ + $f(\vec{y})$\\
+$f(\vec{x} + \vec{y})$ = $(\delta_1 + \mu_1)\vec{w}_1 + (\delta_2 + \mu_2) \vec{w}_2 + \hdots + (\delta_p + \mu_p) \vec{w}_p$ \\
+$f(\vec{x}) + f(\vec{y})$ = $\delta_1\vec{w}_1 + \delta_2 \vec{w}_2 + \hdots + \delta_p \vec{w}_p$ + $\mu_1\vec{ew}_1 + \mu_2 \vec{w}_2 + \hdots + \mu_p \vec{w}_p$\\
+$f(\vec{x}) + f(\vec{y})$ = $(\delta_1 + \mu_1)\vec{w}_1 + (\delta_2 + \mu_2) \vec{w}_2 + \hdots + (\delta_p + \mu_p) \vec{w}_p$\\
+Como $f(\vec{x} + \vec{y})$ = $f(\vec{x})$ + $f(\vec{y})$ queda demostrado.\\
+{\bfseries ii)} Sea $\vec{h} \in V$ $\Rightarrow$ $\vec{h}$ = $\beta_1\vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_p\vec{e}_p$ \\
+$\alpha \vec{h}$ = $\alpha(\beta_1\vec{e}_1 + \beta_2 \vec{e}_2 + \hdots + \beta_p\vec{e}_p)$ = $(\alpha \beta_1)\vec{e}_1 + (\alpha \beta_2)\vec{e}_2 + \hdots + (\alpha \beta_p)\vec{e}_p$ \\
+Luego $f(\alpha \vec{h})$ = $(\alpha \beta_1)\vec{w}_1 + (\alpha \beta_2)\vec{w}_2 + \hdots + (\alpha \beta_p)\vec{w}_p$ \\
+Pero $f(\vec{h})$ = $\beta_1\vec{w}_1 + \beta_2 \vec{w}_2 + \hdots + \beta_p\vec{w}_p$\\
+Y también $\alpha \cdot f(\vec{h})$ = $\alpha \cdot (\beta_1\vec{w}_1 + \beta_2 \vec{w}_2 + \hdots + \beta_p\vec{w}_p)$ $\Rightarrow$ \\
+$\alpha \cdot f(\vec{h})$ = $(\alpha \beta_1)\vec{w}_1 + (\alpha \beta_2)\vec{w}_2 + \hdots + (\alpha \beta_p)\vec{w}_p$\\
+Como  $f(\alpha \vec{h})$ = $\alpha \cdot f(\vec{h})$ queda demostrado. \\
+Por lo tanto hemos demostrado {\bfseries i)} y {\bfseries ii)} y hemos probado que $f$ así definida es una T.L.\\
+Falta probar que esta $f$ cumple con la condición que $f(\vec{e}_i)$ = $\vec{w}_i$ para todo i. \\
+Pero $\vec{e}_1$ = $1 \cdot \vec{e}_1 + 0 \cdot \vec{e}_2 + \hdots + 0 \cdot \vec{e}_p$ \\
+$\Rightarrow$ $f(\vec{e}_1)$ = $\vec{w}_1$ \\
+$\vec{e}_2$ = $0 \cdot \vec{e}_1 + 1 \cdot \vec{e}_2 + \hdots + 0 \cdot \vec{e}_p$ \\
+$\Rightarrow$ $f(\vec{e}_2)$ = $\vec{w}_2$ \\
+De la misma manera se demuestra que $f(\vec{e}_i)$ = $\vec{w}_i$ \\
+{\bfseries b) Unicidad:} \\
+Supongamos que existen 2 T.L. $f$ y $g$ $: V \rightarrow W$ / $f(\vec{e}_i)$ = $\vec{w}_i$ y $g(\vec{e}_i)$ = $\vec{w}_i$ \\
+Queremos demostrar que $f$ = $g$. \\
+O sea $f(\vec{x})$ = $g(\vec{x})$ para todo $\vec{x} \in V$ \\
+Sea $\vec{x} \in V$ $\Rightarrow$ $\vec{x}$ = $\theta_1 \vec{e}_1 + \theta_2 \vec{e}_2 + \hdots + \theta_p \vec{e}_p$ \\
+$\Rightarrow$ $f(\vec{x})$ = $f(\theta_1 \vec{e}_1 + \theta_2 \vec{e}_2 + \hdots + \theta_p \vec{e}_p)$. \\
+$\Rightarrow$ $f(\vec{x})$ = $\theta_1 f(\vec{e}_1) + \theta_2 f(\vec{e}_2) + \hdots + \theta_p f(\vec{e}_p)$. (¿Por qué?) \\
+$\Rightarrow$ $f(\vec{x})$ = $\theta_1 \vec{w}_1 + \theta_2 \vec{w}_2 + \hdots + \theta_p \vec{w}_p$. \\
+De manera similar planteamos $g(\vec{x})$\\
+$\Rightarrow$ $g(\vec{x})$ = $g(\theta_1 \vec{e}_1 + \theta_2 \vec{e}_2 + \hdots + \theta_p \vec{e}_p)$. \\
+$\Rightarrow$ $g(\vec{x})$ = $\theta_1 g(\vec{e}_1) + \theta_2 g(\vec{e}_2) + \hdots + \theta_p g(\vec{e}_p)$.  \\
+$\Rightarrow$ $g(\vec{x})$ = $\theta_1 \vec{w}_1 + \theta_2 \vec{w}_2 + \hdots + \theta_p \vec{w}_p$. \\
+Entonces $f$ = $g$, por lo que la transformación lineal debe ser única.
 \end{document}

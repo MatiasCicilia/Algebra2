@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  23 JUL 2017 02:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  25 JUL 2017 17:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,12 +460,12 @@ LaTeX Font Info:    ... okay on input line 30.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks22
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
  (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
  [1
 
 {e:/Developer/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -475,31 +475,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] (./Transformaciones Lineales.aux) ) 
+[2] [3] [4] [5] (./Transformaciones Lineales.aux) ) 
 Here is how much of TeX's memory you used:
- 2056 strings out of 494945
- 24524 string characters out of 6180553
- 87683 words of memory out of 5000000
- 5362 multiletter control sequences out of 15000+600000
- 10468 words of font info for 38 fonts, out of 8000000 for 9000
+ 2059 strings out of 494945
+ 24556 string characters out of 6180553
+ 98683 words of memory out of 5000000
+ 5365 multiletter control sequences out of 15000+600000
+ 10775 words of font info for 39 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,11n,43p,243b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/Developer/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Developer/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/2016/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Transformaciones Lineales.pdf" (3 pages, 125362 bytes).
+ 27i,11n,43p,334b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
+<e:/Developer/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><e:/Developer/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><e:/Developer/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><e:/Developer/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/Developer/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Transformaciones Lineales.pdf" (5 pages, 137168 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
