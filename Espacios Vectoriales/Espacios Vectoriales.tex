@@ -80,7 +80,7 @@ a) B es un conjunto L.I.\\
 b) B es un sistema de generadores de V \\
 Ejemplos de bases canónicas: 
 \begin{itemize}
-\item {\bfseries En R$^{n}$:} (1,0,0,...,0), (0,1,0,...,0), ... , (0,0,0...,1) 
+\item {\bfseries En R$^{n}$:} (1,0,0,...,0), (0,1,0,...,0), ... , (0,0,0,...,1) 
 \item {\bfseries En R$^{2x2}$:} $\begin{pmatrix} 1&0\\ 0&0 \end{pmatrix}$ , $\begin{pmatrix} 0&1\\ 0&0 \end{pmatrix}$ , $\begin{pmatrix} 0&0\\ 1&0 \end{pmatrix}$ , $\begin{pmatrix} 0&0\\ 0&1 \end{pmatrix}$ 
 \item {\bfseries En P$_{n}$:} \{1, x, x$^2$, ... , x$^n$ \} 
 \end{itemize}
@@ -158,8 +158,8 @@ Por lo que ha quedado expresado uno de los vectores como combinación lineal de 
 $\vec{e}_1$ = $-\dfrac{\alpha_2}{\alpha_1}\cdot\vec{e}_2 - \cdots - \dfrac{\alpha_n}{\alpha_1}\cdot\vec{e}_n$ . \\
 Reemplazando en $\vec{x}$ nos queda: \\
 $\vec{x}$ = $\beta_1 \cdot (-\dfrac{\alpha_2}{\alpha_1}\cdot\vec{e}_2 - \cdots - \dfrac{\alpha_n}{\alpha_1}\cdot\vec{e}_n)+\beta_2\vec{e}_2+\cdots+\beta_n\vec{e}_n $. \\
-Sacando factor común queda expresado\\ $\vec{x}$ = $\vec{e}_2 \cdot (- \dfrac{\alpha_2}{\alpha_1}) + \vec{e}_3 \cdot (- \dfrac{\alpha_3}{\alpha_1}) + \hdots + \vec{e}_n \cdot (-\dfrac{\alpha_n}{\alpha_1})$  \\
-De esta manera, $\vec{e}_2$ queda generado por \{$\vec{e}_2,\hdots,\vec{e}_n\}$, el cual tiene $n-1$ elementos. 
+Sacando factor común queda expresado\\ $\vec{x}$ = $\vec{e}_2 \cdot (- \dfrac{\alpha_2}{\alpha_1} \cdot \beta_1 + \beta_2) + \vec{e}_3 \cdot (- \dfrac{\alpha_3}{\alpha_1} \cdot \beta_1 + \beta_3) + \hdots + \vec{e}_n \cdot (-\dfrac{\alpha_n}{\alpha_1} \cdot \beta_1 + \beta_n)$  \\
+De esta manera, $\vec{x}$ queda generado por \{$\vec{e}_2,\hdots,\vec{e}_n\}$, el cual tiene $n-1$ elementos. 
 \subsection{Dado V e.v. dim(V) = n. Si tenemos n vectores L.I. pertenecientes a V, son una base de V}
 {\bfseries {Hipótesis:}} V e.v, dim(V) = n. \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} conjunto L.I. \\
 {\bfseries {Tesis:}} \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n $\} Base de V\\
@@ -168,9 +168,9 @@ Que son L.I. lo sabemos por Hip. Sólo nos falta probar que son S.G. de V\\
 Para eso debemos probar que cualquier $\vec{x}$ perteneciente a V está generado por dichos vectores. \\
 Sea $\vec{x}$ $\in$ V (¿Por qué comienzo así?) y formo el conjunto A = \{$\vec{e}_{1}, \vec{e}_2,... \vec{e}_n, \vec{x} $\} este conjunto es L.D. (¿Por qué?)\\
 Entonces existe una C.L. de sus vectores igualada a cero con sus escalares no todos nulos. \\
-Sea $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n} + \alpha_{n+1}\vec{x} = \vec{0}$; puede ser $\alpha_{n+1} = 0$ o $\alpha_{n+1} \neq 0$\\
+Sea $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n} + \alpha_{n+1}\vec{x} = \vec{0}$ $\Rightarrow$ puede ser $\alpha_{n+1} = 0$ ó $\alpha_{n+1} \neq 0$\\
 Si $\alpha_{n+1} = 0$ nos queda $\alpha_1\vec{e}_1+\alpha_2\vec{e}_2+\hdots+\alpha_n\vec{e}_{n}= \vec{0}$. 
-\\Y, como los $\vec{e}_i$ son L.I. tendríamos $\alpha_1 = \alpha_2 = \hdots = \alpha_n = 0$. Lo cual es absurdo (¿Por qué?)
+\\Y, como los $\vec{e}_i$ son L.I. tendríamos $\alpha_1 = \alpha_2 = \hdots = \alpha_n = 0$. Lo cual es absurdo (¿Por qué?)\\
 Por lo tanto es $\alpha_{n+1} \neq 0$ y podemos despejar.\\
 Nos queda $\vec{x}$ = $-\vec{e}_1 \cdot (\dfrac{\alpha_1}{\alpha_{n+1}}) - \vec{e}_2 \cdot (\dfrac{\alpha_{2}}{\alpha_{n+1}}) - \hdots - \vec{e}_n \cdot (\dfrac{\alpha_n}{\alpha_{n+1}})$\\
 Por lo que queda demostrado que: \\
@@ -197,7 +197,7 @@ Dados S y T subespacios de V e.v. podemos definir :
 \subsection{Si S y T son subespacios de V e.v. entonces S+T es un
 subespacio de V.}
 {\bfseries {Hipótesis:}} V e.v. , S y T subespacios de V \\
-{\bfseries {Tesis:}} S +T es un subespacio de V\\
+{\bfseries {Tesis:}} S + T es un subespacio de V\\
 {\bfseries {Demostración:}} Es evidente que $S + T \subset V$ (¿Por qué)?\\
 Veamos que se cumplen las 3 condiciones para que sea subespacio\\
 {\bfseries {a) Sea $\vec{x} \in S+T$ e $\vec{y} \in S+T$}} entonces\\
@@ -209,7 +209,7 @@ Pero $\vec{a}+\vec{c} \in S$ y $\vec{b}+\vec{d} \in T$ (¿Por qué?) $\Rightarro
 $\alpha\vec{x} = \alpha\cdot (\vec{a} + \vec{b}) = \alpha\vec{a} + \alpha\vec{b}$ (¿Por qué?)\\
 Pero $\alpha\vec{a} \in S$ y $\alpha\vec{b} \in T$ $\Rightarrow$ $\alpha\vec{x} \in S+T$\\
 {\bfseries {c)}} $\vec{0}_v \in S, \vec{0}_v \in T$ y como $\vec{0}_v + \vec{0}_v = \vec{0}_v$ $\Rightarrow$ $\vec{0}_v \in S+T$\\
-Entonces queda probado que S+T es subespacio de V
+Entonces queda probado que S + T es subespacio de V
 \subsection{Teorema de la dimension de suma de subespacios}
 Si S y T son subespacios de V e.v. ,entonces\\
 dim($S+T$) = dim($S$) + dim($T$) - dim($S \cap T$)\\
@@ -222,13 +222,13 @@ $\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r, \vec{y}_1, \vec{y}_2, \hdots, \vec{y
 Con estos vectores formemos un conjunto que pueda ser base de S+T\\
 Por de pronto no deberá tener vectores repetidos (¿Por qué?)\\
 Entonces tomamos A = $\{\vec{v}_1, \vec{v}_2, \hdots, \vec{v}_r, \vec{x}_1, \vec{x}_2, \hdots, \vec{x}_p, \vec{y}_1, \vec{y}_2, \hdots, \vec{y}_d\}$\\
-Vamos a demostrar que A esun conjunto l.i. y S.G. de S+T\\
+Vamos a demostrar que A es un conjunto l.i. y S.G. de S+T\\
 Primero veamos que son L.I.\\
 Hacemos una C.L. igualada a $\vec{0}$, o sea: \\
-$\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots, \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots \beta_p\vec{x}_p + \gamma_1\vec{y}_1 + \gamma_2\vec{y}_2 + \hdots + \gamma_d\vec{y}_d = \vec{0}$\\
+$\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots + \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots + \beta_p\vec{x}_p + \gamma_1\vec{y}_1 + \gamma_2\vec{y}_2 + \hdots + \gamma_d\vec{y}_d = \vec{0}$\\
 Lo que es lo mismo que: 
 \begin{align}
-\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots, \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots \beta_p\vec{x}_p  = - \gamma_1\vec{y}_1 - \gamma_2\vec{y}_2 - \hdots - \gamma_d\vec{y}_d
+\alpha_1\vec{v}_1 + \alpha_2\vec{v}_2 + \hdots + \alpha_r\vec{v}_r + \beta_1\vec{x}_1 + \beta_2\vec{x}_2 + \hdots + \beta_p\vec{x}_p  = - \gamma_1\vec{y}_1 - \gamma_2\vec{y}_2 - \hdots - \gamma_d\vec{y}_d
 \end{align}
 Llamaremos $\vec{h}$ a estos vectores que son iguales. Pero $\vec{h} \in S$ y $\vec{h} \in T$ entonces $\vec{h} \in S \cap T$, o sea estará generado por la base de $S \cap T$. \\
 Entonces nos queda: \\
