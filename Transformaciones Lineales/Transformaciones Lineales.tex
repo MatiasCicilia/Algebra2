@@ -1,3 +1,14 @@
+%----------------------------------------------------------%---------------- Sobre la redacción ----------------------
+% Con el propósito de aprender a utilizar LaTeX, me propuse
+% pasar la teoría de Algebra 2 de la Universidad Austral. 
+% Si bien la prolijidad del código no es ideal,
+% va mejorando con cada documento.
+% Gracias a la profesora Mariana Krause por su ayuda,
+% Y a la profesora Cristina Storni por la redacción original.
+% Cualquier duda o consulta contactar:
+% matias.cicilia@ing.austral.edu.ar
+%----------------------------------------------------------
+%----------------------------------------------------------
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -101,7 +112,7 @@ Y como $\alpha \cdot \vec{a}$ $\in$ V (¿Por qué?) $\Rightarrow$ $\alpha \cdot 
 \vspace{2mm} \noindent
 {\bfseries Hipótesis:} $f: V \rightarrow W$ / $f$ es T.L. , $\{\vec{e}_1, \vec{e}_2, \hdots  \vec{e}_n\}$ base de V \\
 {\bfseries Tesis:} $\{f(\vec{e}_1), f(\vec{e}_2), \hdots  f(\vec{e}_n)\}$ es S.G. de $Im(f)$ \\
-{\bfseries Demostración:} Sea $\vec{x} \in Im(f)$ $\Rightarrow$ $\exists \vec{a} \in V$ / $f(\vec{a}) = \vec{x}$ \\
+{\bfseries Demostración:} Sea $\vec{x} \in Im(f)$ $\Rightarrow$ $\exists$ $\vec{a} \in V$ / $f(\vec{a}) = \vec{x}$ \\
 Como $\vec{a} \in V$ está generado por los elementos de una base de V, se lo puede escribir como: \\
 $\vec{a} = \alpha_1\vec{e}_1 + \alpha_2\vec{e}_2 + \hdots + \alpha_n\vec{e}_n$
 \\Entonces también: \\
@@ -128,7 +139,7 @@ Si $f:V \rightarrow W$ es una T.L. , entonces
 %------------------------------------------------
 
 \vspace{2mm} \noindent
-{\Large \bfseries{7) $f$ es monomorfismo $\Leftrightarrow$ $Nu_(f)$ = $\{\vec{0}\}$}}
+{\Large \bfseries{7) $f$ es monomorfismo $\Leftrightarrow$ $N_u(f)$ = $\{\vec{0}\}$}}
 
 \vspace{2mm} \noindent
 $\Longrightarrow$ \\
@@ -193,8 +204,8 @@ Si paso restando me queda: \\
 $\alpha_1 \vec{f}_1 + \alpha_2 \vec{f}_2 + \hdots + \alpha_p \vec{f}_p - \beta_1 \vec{e}_1 - \beta_2 \vec{e}_2 - \hdots + \beta_r \vec{e}_r $ = $\vec{0}$ \\
 Pero esto es una C.L. igualada a $\vec{0}$ de vectores L.I. (¿Por qué?) \\
 Por lo tanto $\alpha_i$ = 0 y $\beta_i$ = 0. $\Rightarrow$ C' es L.I. \\
-O sea C' es una base de $Im(f)$. 
-$\Rightarrow$ $dim(V)$ = $r+p$, $dim(Nu_f)$ = r, $dim(Im(f))$ = p.\\
+O sea C' es una base de $Im(f)$.\\
+$\Rightarrow$ $dim(V)$ = $r+p$, $dim(N_u(f))$ = r, $dim(Im(f))$ = p.\\
 Con lo que queda demostrada la tesis.
 %------------------------------------------------
 %---------------- Sección 10 ---------------------
@@ -217,7 +228,7 @@ Debemos ahora probar que está función así definida es una T.L. \\
 Sea $\vec{x} \in V$ $\Rightarrow$ $\vec{x}$ = $\delta_1\vec{e}_1 + \delta_2 \vec{e}_2 + \hdots + \delta_p \vec{e}_p$ \\
 Entonces $f(\vec{x})$ = $\delta_1\vec{w}_1 + \delta_2 \vec{w}_2 + \hdots + \delta_p \vec{w}_p$ (¿Por qué?) \\
 Sea $\vec{y} \in V$ $\Rightarrow$ $\vec{y}$ = $\mu_1\vec{e}_1 + \mu_2 \vec{e}_2 + \hdots + \mu_p \vec{e}_p$ \\
-Entonces $f(\vec{y})$ = $\mu_1\vec{ew}_1 + \mu_2 \vec{w}_2 + \hdots + \mu_p \vec{w}_p$ \\
+Entonces $f(\vec{y})$ = $\mu_1\vec{w}_1 + \mu_2 \vec{w}_2 + \hdots + \mu_p \vec{w}_p$ \\
 Por lo tanto $\vec{x}$ + $\vec{y}$ = $\delta_1\vec{e}_1 + \delta_2 \vec{e}_2 + \hdots + \delta_p \vec{e}_p$ + $\mu_1\vec{e}_1 + \mu_2 \vec{e}_2 + \hdots + \mu_p \vec{e}_p$ = \\
 = $(\delta_1 + \mu_1)\vec{e}_1 + (\delta_2 + \mu_2) \vec{e}_2 + \hdots + (\delta_p + \mu_p) \vec{e}_p$\\
 Escribimos entonces $f(\vec{x} + \vec{y})$ y $f(\vec{x})$ + $f(\vec{y})$\\
