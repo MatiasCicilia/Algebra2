@@ -20,7 +20,7 @@
 <h2 id="trabajos-prcticos">Trabajos Prácticos</h2>
 
 <ol>
-  <li><a href="http://campus.austral.edu.ar/fi/mod/resource/view.php?id=29589">TP1</a>(Falta link al Campus Virtual de todos)</li> 
+  <li><a href="http://campus.austral.edu.ar/fi/mod/resource/view.php?id=29589">TP1</a></li> 
   <li><a href="http://campus.austral.edu.ar/fi/mod/resource/view.php?id=29590">TP2</a></li>
   <li><a href="http://campus.austral.edu.ar/fi/mod/resource/view.php?id=29591">TP3</a></li>
   <li><a href="http://campus.austral.edu.ar/fi/mod/resource/view.php?id=29592">TP4</a></li>
