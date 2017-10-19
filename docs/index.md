@@ -2,6 +2,7 @@
 
 <ul>
   <li><a href="http://campus.austral.edu.ar/fi/mod/url/view.php?id=15945">Programa</a></li>
+  <li><a href="https://github.com/MatiasCicilia/Algebra2/raw/master/Demostraciones%20para%20el%20Parcial/Demostraciones.pdf">Demostraciones para el Parcial</a></li>
 </ul>
 
 <h2 id="presentaciones">Teóricas</h2>
