@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+
+% -------------  Header   ---------------
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyheadoffset{2pt}
+\fancyhead[L]{Algebra II}
+\fancyhead[R]{Universidad Austral}
+% -------------  Margenes ---------------
+\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+	\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+% ------------- /Margenes ---------------
+% ------------- Espaciado entre lineas ---------------
+\renewcommand{\baselinestretch}{1.5} 
+% !TeX spellcheck = es_ES
+\title{Demostraciones para el Parcial}
+\author{Álgebra II}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle{}
+% ------------- Comienza el documento ---------------
+\section{Espacios Vectoriales}
+
+\begin{itemize}
+\item Las coordenadas de un vector respecto de una base son únicas 
+\item Si un espacio vectorial tiene una base de $n$ elementos cualquier conjunto con $n+1$ es L.D.
+\item Todas las bases de un mismo espacio vectorial tienen la misma cantidad de elementos
+\item  Si un conjunto de vectores es L.D. entonces alguno es Combinación lineal de los otros 
+\item  Si $\{ \vec{e}_1,\vec{e}_2,\hdots, \vec{e}_n\}$ es un S.G. de un espacio vectorial V y es un conjunto L.D. entonces existe un
+subconjunto de él de $n-1$ elementos que es S.G. de V
+\item  Dado V e.v. tal que $dim(V)$ = $n$, si tenemos $n$ vectores L.I. $\in$ V $\Rightarrow$ son una base de V 
+\item  Dado V e.v $dim(V)$ = $n$, si tenemos un conjunto de n vectores S.G. de V $\Rightarrow$ son una base de V 
+\item  Si S y T son subespacios de V e.v. $\Rightarrow$ $S+T$ es un subespacio de V 
+\end{itemize}
+
+\section{Transformaciones Lineales}
+\begin{itemize}
+\item Dado V y W e.v.s y $f$: $V \rightarrow W$ / $f$ es T.L. $\Rightarrow$  $f(\vec{0}_v)$ = $\vec{0}_w$ 
+\item Dado V y W e.v.s y $f$: $V \rightarrow W$ / $f$ es T.L. $\Rightarrow$  $Im(f)$ es un subespacio de W
+\item Dado V y W e.v.s y $f$: $V \rightarrow W$ / $f$ es T.L. $\Rightarrow$ $f$ es monomorfismo $\leftrightarrow$ $Nu(f)$ = $\{\vec{0}\}$
+\item Si $f$: $V \rightarrow W$ es T.L. y $\{ \vec{x}_1,\vec{x}_2,\hdots, \vec{x}_n\}$ base de V $\Rightarrow$  $\{ f(\vec{x}_1),f(\vec{x}_2),\hdots, f(\vec{x}_n)\}$ es S.G. de $Im(f)$
+\item Si $f$: $V \rightarrow W$ es T.L. y $\{ \vec{x}_1,\vec{x}_2,\hdots, \vec{x}_n\}$ base de V y $f$ es monomorfismo $\Rightarrow$  $\{ f(\vec{x}_1),f(\vec{x}_2),\hdots, f(\vec{x}_n)\}$ es una base de $Im(f)$
+\end{itemize}
+
+\section{Producto Interno}
+\begin{itemize}
+\item Todo conjunto ortogonal de vectores es un conjunto linealmente independiente.
+\item  En todo espacio euclídeo V existe una base ortonormal. (proceso de Gram-Schmidt)
+\end{itemize}
+
+\section{Matriz Diagonalizable y Autovectores}
+\begin{itemize}
+\item A es diagonalizable $\leftrightarrow$ existe una base de autovectores 
+\item  Si $\{ \vec{v}_1,\vec{v}_2,\hdots, \vec{v}_n\}$ son autovectores de A $\Rightarrow$ cualquier combinación lineal también lo es 
+\end{itemize}
+\end{document}
