@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  19 OCT 2017 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.5.10)  19 OCT 2017 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -433,18 +433,18 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 (./Demostraciones.aux)
 \openout1 = `Demostraciones.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (e:/Developer/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -460,14 +460,14 @@ LaTeX Font Info:    ... okay on input line 30.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks22
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
  (e:/Developer/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
 
-Overfull \hbox (7.19394pt too wide) in paragraph at lines 53--54
+Overfull \hbox (7.19394pt too wide) in paragraph at lines 54--55
 []\OT1/cmr/m/n/10.95 Si $\OML/cmm/m/it/10.95 f$\OT1/cmr/m/n/10.95 : $\OML/cmm/m
 /it/10.95 V \OMS/cmsy/m/n/10.95 ! \OML/cmm/m/it/10.95 W$ \OT1/cmr/m/n/10.95 es 
 T.L. y $\OMS/cmsy/m/n/10.95 f[]\OML/cmm/m/it/10.95 ; []; [] ; []\OMS/cmsy/m/n/1
@@ -504,7 +504,7 @@ public/amsfonts/cm/cmmi10.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmr8.pfb><e:/Developer/texlive/2016/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb>
-Output written on Demostraciones.pdf (2 pages, 87138 bytes).
+Output written on Demostraciones.pdf (2 pages, 87129 bytes).
 PDF statistics:
  43 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
